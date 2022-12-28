@@ -42,6 +42,14 @@ Begin["`Private`"]
 
 
 (* ::Section:: *)
+(*Direcotory*)
+
+
+$directory = 
+ParentDirectory[DirectoryName[$InputFileName]]
+
+
+(* ::Section:: *)
 (*Patternt test functions*)
 
 
@@ -60,9 +68,7 @@ True
 
 
 $objectIcon = 
-Graphics3D[Table[With[{p={i,j,k}/5},
-{RGBColor[p],Opacity[.5],Cuboid[p,p+.15]}],{i,5},{j,5},{k,5}], 
-SphericalRegion->True, Lighting->"Neutral", ImageSize->24, ViewAngle->Pi/6.5,Boxed->False]
+Import[FileNameJoin[{$directory, "Images", "ObjectIcon.png"}]]
 
 
 SetAttributes[Object, HoldAll]
@@ -96,16 +102,66 @@ Block[{Object},
 
 
 Object /: 
-Set[Object[symbol_Symbol?AssociationQ][field_], value_] := 
+Set[Object[symbol_Symbol?AssociationQ][field_String], value_] := 
 symbol[field] = value
 
 
-Object[symbol_Symbol?AssociationQ][field_] := 
+Object /: 
+Set[object: Object[symbol_Symbol?AssociationQ][field_Symbol], value_] := 
+With[{fieldStr = SymbolName[field]}, symbol[fieldStr] = value]
+
+
+Object[symbol_Symbol?AssociationQ][field_String] := 
 symbol[field]
+
+
+Object[symbol_Symbol?AssociationQ][field_Symbol] := 
+symbol[ToString[field]]
+
+
+Object[symbol_Symbol?AssociationQ][fields: (_Symbol | _String)..] := 
+Fold[Construct, Object[symbol], {fields}]
+
+
+Object /: 
+Dot[Object[symbol_Symbol?AssociationQ], keys__] := 
+Fold[Construct, Object[symbol], {keys}]
 
 
 Object[symbol_Symbol?AssociationQ][] := 
 symbol
+
+
+(* ::Section:: *)
+(*Set*)
+
+
+Unprotect[Set]
+
+
+Set[Dot[object_?ObjectQ, keys__], value_] := 
+Module[{temp, firstKeys, lastKey = Last[{keys}]}, 
+	If[Length[{keys}] == 1, 
+		With[{key = lastKey}, object[key] = value], 
+		firstKeys = Sequence @@ {keys}[[ ;; -2]];
+		temp = object[firstKeys]; 
+		Which[
+			ObjectQ[temp], 
+				With[{key = lastKey}, temp[key] = value], 
+			AssociationQ[temp], 
+				With[{key = lastKey}, temp[key] = value]; 
+				With[{expr = Hold @@ {object, firstKeys}}, 
+					expr /. Hold[o_, args__] :> Set[o[args], temp]], 
+			True, 
+				Message[Object::setraw, Row[{object, "[", keys, "]", " = ", value}]]; 
+				Null
+		]
+	]; 
+	value
+]
+
+
+Protect[Set]
 
 
 (* ::Section:: *)
