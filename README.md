@@ -21,5 +21,4 @@ Instance of the `Object`:
 object1 = Object[]
 ```
 
->![image](https://user-images.githubusercontent.com/16749283/216982750-f1d8863e-8466-4c1e-9163-66168bbb2432.png)
-
+>**Object[**![SummaryBox](https://user-images.githubusercontent.com/16749283/216984255-9fe5d45a-948a-4e59-b0be-392a1b5a9f81.png)**]**
