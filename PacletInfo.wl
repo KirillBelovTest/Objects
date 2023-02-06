@@ -7,7 +7,7 @@ PacletObject[
     "Creator" -> "Kirill Belov",
     "License" -> "MIT",
     "PublisherID" -> "KirillBelov",
-    "Version" -> "1.0.2",
+    "Version" -> "1.0.10",
     "WolframVersion" -> "13+",
     "Extensions" -> {
       {
@@ -21,7 +21,15 @@ PacletObject[
           "KirillBelov`Objects`TypeQ"
         }
       },
-      {"Documentation", "Language" -> "English"}
+      {"Documentation", "Language" -> "English"},
+      {
+        "Asset",
+        "Assets" -> {
+          {"Images", "./Images"},
+          {"ReadMe", "README.md"},
+          {"Tests", "./Tests"}
+        }
+      }
     }
   |>
 ]

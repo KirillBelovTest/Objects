@@ -53,9 +53,17 @@ ParentDirectory[DirectoryName[$InputFileName]]
 (*Patternt test functions*)
 
 
+TypeQ[___] := 
+False
+
+
 Object /: 
 TypeQ[Object] := 
 True
+
+
+ObjectQ[___] := 
+False
 
 
 Object /: 
@@ -64,18 +72,55 @@ True
 
 
 (* ::Section:: *)
-(*Object*)
+(*Get*)
 
 
-$objectIcon = 
-Import[FileNameJoin[{$directory, "Images", "ObjectIcon.png"}]]
+Object /: 
+get[Object[symbol_Symbol?AssociationQ], fields: {(_Symbol | _String)...}] := 
+With[{keys = Map[If[StringQ[#], #, SymbolName[#]]&] @ fields}, 
+	Fold[Construct, symbol, keys]
+]
+
+
+(* ::Section:: *)
+(*Set*)
+
+
+Object /: 
+set[Object[symbol_Symbol?AssociationQ], fields: {(_Symbol | _String)..}, value_] := 
+With[{keys = Map[If[StringQ[#], #, SymbolName[#]]&] @ fields}, 
+	With[{lastKey = Last[keys], firstKeys = Drop[keys, -1]}, 
+		If[Length[keys] == 1, 
+			symbol[lastKey] = value, 
+			
+			Module[{temp = get[Object[symbol], firstKeys]}, 
+				Which[
+					ObjectQ[temp], 
+						set[temp, {lastKey}, value], 
+					AssociationQ[temp], 
+						temp[lastKey] = value; 
+						set[Object[symbol], firstKeys, temp];  
+						value, 
+					True, 
+						Message[Object::setraw, Row[{Object[symbol], "[", keys, "]", " = ", value}]]; 
+						Null
+				]
+			]
+		]
+	]
+]
+
+
+(* ::Section:: *)
+(*Object constructor*)
 
 
 SetAttributes[Object, HoldAll]
 
 
 Options[Object] = {
-	"Icon" -> $objectIcon
+	"Icon" -> Import[FileNameJoin[{$directory, "Images", "ObjectIcon.png"}]], 
+	"Init" -> Identity
 }
 
 
@@ -86,79 +131,61 @@ With[{symbol = Unique[ToString[Object] <> "`$"]},
 		symbol[opt] = OptionValue[Object, Flatten[{opts}], opt], 
 		{opt, Keys[Options[Object]]}
 	]; 
-	symbol["Self"] = Object[symbol]
+	symbol["Self"] = Object[symbol]; 
+	symbol["Properties"] = {}; 
+	symbol["Properties"] = Keys[symbol]; 
+	symbol["Init"] @ Object[symbol]; 
+	Return[Object[symbol]]
 ]
+
+
+(* ::Section:: *)
+(*Object getters*)
+
+
+Object[symbol_Symbol?AssociationQ][fields___] := 
+get[Object[symbol], {fields}]
+
+
+Object /: 
+Dot[Object[symbol_Symbol?AssociationQ], fields__] := 
+get[Object[symbol], {fields}]
+
+
+(* ::Section:: *)
+(*Object setters*)
 
 
 Object /: 
 Set[name_Symbol, Object[symbol_Symbol?AssociationQ]] := 
-Block[{Object}, 
+Module[{nameString}, 
 	ClearAll[name]; 
-	SetAttributes[Object, HoldAll]; 
-	name = Object[symbol]; 
-	name /: Set[name[field_], value_] := Set[Object[symbol][field], value]; 
+	nameString = SymbolName[name]; 
+	Block[{Object}, SetAttributes[Object, HoldAll]; name = Object[symbol]]; 
+	name /: Set[name[fields__], value_] := (
+		Object[symbol]["Properties"] = DeleteDuplicates[Append[Object[symbol]["Properties"], ToString[fields]]]; 
+		ResourceFunction["AddCodeCompletion"][nameString][Object[symbol]["Properties"]];
+		set[Object[symbol], {fields}, value]
+	); 
+	ResourceFunction["AddCodeCompletion"][nameString][Object[symbol]["Properties"]];
 	name
 ]
 
 
 Object /: 
-Set[Object[symbol_Symbol?AssociationQ][field_String], value_] := 
-symbol[field] = value
-
-
-Object /: 
-Set[object: Object[symbol_Symbol?AssociationQ][field_Symbol], value_] := 
-With[{fieldStr = SymbolName[field]}, symbol[fieldStr] = value]
-
-
-Object[symbol_Symbol?AssociationQ][field_String] := 
-symbol[field]
-
-
-Object[symbol_Symbol?AssociationQ][field_Symbol] := 
-symbol[ToString[field]]
-
-
-Object[symbol_Symbol?AssociationQ][fields: (_Symbol | _String)..] := 
-Fold[Construct, Object[symbol], {fields}]
-
-
-Object /: 
-Dot[Object[symbol_Symbol?AssociationQ], keys__] := 
-Fold[Construct, Object[symbol], {keys}]
-
-
-Object[symbol_Symbol?AssociationQ][] := 
-symbol
+Set[Object[symbol_Symbol?AssociationQ][fields__], value_] := 
+set[Object[symbol], {fields}, value]
 
 
 (* ::Section:: *)
-(*Set*)
+(*Override Set*)
 
 
 Unprotect[Set]
 
 
-Set[Dot[object_?ObjectQ, keys__], value_] := 
-Module[{temp, firstKeys, lastKey = Last[{keys}]}, 
-	If[Length[{keys}] == 1, 
-		With[{key = lastKey}, object[key] = value], 
-		firstKeys = Sequence @@ {keys}[[ ;; -2]];
-		temp = object[firstKeys]; 
-		Which[
-			ObjectQ[temp], 
-				With[{key = lastKey}, temp[key] = value], 
-			AssociationQ[temp], 
-				With[{key = lastKey}, temp[key] = value]; 
-				With[{expr = Hold @@ {object, firstKeys}}, 
-					expr /. Hold[o_, args__] :> Set[o[args], temp]], 
-			True, 
-				Message[Object::setraw, Row[{object, "[", keys, "]", " = ", value}]]; 
-				Null
-		]
-	]; 
-	value
-]
+Set[Dot[object_?ObjectQ, fields__], value_] := 
+set[object, {fields}, value]
 
 
 Protect[Set]
@@ -175,8 +202,11 @@ objectFieldsBox[assoc_Symbol?AssociationQ] :=
 Function[fields, Sequence@@{First[#], Partition[Flatten[Rest[#]], UpTo[2]]}& @ 
 Append[Partition[fields, UpTo[2]], {}]] @ 
 Join[
-	{{BoxForm`SummaryItem[{"Symbol: ", Defer[assoc]}], SpanFromLeft}}, 
-	KeyValueMap[{BoxForm`SummaryItem[{#1 <> ": ", #2}], SpanFromLeft}&] @ KeyDrop[assoc, {"Self", "Icon"}]
+	{
+		{BoxForm`SummaryItem[{"Symbol: ", Defer[assoc]}], SpanFromLeft}, 
+		{BoxForm`SummaryItem[{"Properties: ", assoc["Properties"]}], SpanFromLeft}
+	}, 
+	KeyValueMap[{BoxForm`SummaryItem[{#1 <> ": ", #2}], SpanFromLeft}&] @ KeyDrop[assoc, {"Self", "Icon", "Properties"}]
 ]
 
 
@@ -196,6 +226,9 @@ BoxForm`ArrangeSummaryBox[
 fieldsPattern[] := {(_String | _Symbol | Rule[_String | _Symbol, _])...}
 
 
+initPattern[] := Except[_fieldsPattern | _Association | _?TypeQ]
+
+
 toRule[key_String -> value_] := key -> value
 
 
@@ -211,20 +244,28 @@ toRule[key_Symbol] := ToString[key] -> Automatic
 toRule[fields: fieldsPattern[]] := <|Map[toRule] @ fields|>
 
 
-CreateType[type_Symbol, parent_Symbol?TypeQ, fields: <|Rule[_String, _]...|>] := (
+CreateType[type_Symbol, parent_Symbol?TypeQ, init: initPattern[], fields: <|Rule[_String, _]...|>] := (
 	ClearAll[type]; 
 	Language`ExtendedFullDefinition[type] = Language`ExtendedFullDefinition[parent] /. parent -> type; 
-	Options[type] = Normal[<|Join[Options[type], Normal[fields]]|>]; 
+	Options[type] = Normal[<|Join[Options[type], Normal[fields], {If[init === Automatic, Nothing, "Init" -> init]}]|>]; 
 	type
 )
 
 
-CreateType[type_Symbol, parent_Symbol?TypeQ, fields: fieldsPattern[]: {}] := 
-CreateType[type, parent, toRule[fields]]
+CreateType[type_Symbol, parent: _Symbol?TypeQ: Object, init: initPattern[]: Automatic, fields: fieldsPattern[]: {}] := 
+CreateType[type, parent, init, toRule[fields]]
+
+
+CreateType[type_Symbol, init: initPattern[]: Automatic, fields: fieldsPattern[]: {}] := 
+CreateType[type, Object, init, fields]
+
+
+CreateType[type_Symbol, parent: _Symbol?TypeQ: Object, fields: fieldsPattern[]: {}] := 
+CreateType[type, parent, Automatic, fields]
 
 
 CreateType[type_Symbol, fields: fieldsPattern[]: {}] := 
-CreateType[type, Object, fields]
+CreateType[type, Object, Automatic, fields]
 
 
 (* ::Section:: *)
