@@ -141,8 +141,16 @@ Object /: Set[Object[symbol_Symbol][key_String], value_] :=
 symbol[key] = value
 
 
+Object /: SetDelayed[Object[symbol_Symbol][key_String], value_] := 
+symbol[key] := value
+
+
 Object /: Set[Object[symbol_Symbol][key_Symbol], value_] := 
 With[{k = SymbolName[key]}, symbol[k] = value]
+
+
+Object /: SetDelayed[Object[symbol_Symbol][key_Symbol], value_] := 
+With[{k = SymbolName[key]}, symbol[k] := value]
 
 
 Object /: Set[Object[symbol_Symbol][keys__, key_String], value_] := 
@@ -157,19 +165,35 @@ With[{part = Object[symbol][keys]},
 ]
 
 
+Object /: SetDelayed[Object[symbol_Symbol][keys__, key_String], value_] := 
+With[{part = Object[symbol][keys]}, 
+	Which[
+		AssociationQ[part], 
+			Object[symbol][keys] = Append[part, key :> value], 
+		True, 
+			part[key] := value
+	]; 
+]
+
+
 Object /: Set[Object[symbol_Symbol][keys__, key_Symbol], value_] := 
 With[{k = SymbolName[key]}, Object[symbol][keys, k] = value]
+
+
+Object /: SetDelayed[Object[symbol_Symbol][keys__, key_Symbol], value_] := 
+With[{k = SymbolName[key]}, Object[symbol][keys, k] := value]
 
 
 Object /: Set[name_Symbol, object_Object] := (
 	ClearAll[name]; 
 	Block[{Object}, SetAttributes[Object, HoldFirst]; name = object]; 
 	name /: Set[name[keys__], value_] := object[keys] = value; 
+	name /: SetDelayed[name[keys__], value_] := object[keys] := value; 
 	name
 )
 
 
-(* ::Section::Closed:: *)
+(* ::Section:: *)
 (*Summary Box*)
 
 
@@ -179,8 +203,7 @@ Module[{above, below},
 		{BoxForm`SummaryItem[{"Self: ", Defer["Self"] /. symbol}], SpanFromLeft}, 
 		{BoxForm`SummaryItem[{"Properties: ", symbol["Properties"]}], SpanFromLeft}
 	}; 
-	below = KeyValueMap[{BoxForm`SummaryItem[{#1 <> ": ", #2}], SpanFromLeft}&] @ 
-		KeyDrop[symbol, {"Self", "Icon", "Properties"}]; 
+	below = {}; 
 	
 	(*Return*)
 	BoxForm`ArrangeSummaryBox[Object, object, symbol["Icon"], above, below, form, "Interpretable" -> Automatic]
