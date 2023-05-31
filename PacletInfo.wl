@@ -7,15 +7,18 @@ PacletObject[
     "Creator" -> "Kirill Belov",
     "License" -> "MIT",
     "PublisherID" -> "KirillBelov",
-    "Version" -> "1.0.19",
+    "Version" -> "1.0.20",
     "WolframVersion" -> "13+",
     "Extensions" -> {
       {
         "Kernel",
         "Root" -> "Kernel",
         "Context" -> {
-          {"KirillBelov`Objects`", "Objects.wl"}, 
-          {"KirillBelov`Objects`Extensions`", "Extensions.wl"}
+          {"KirillBelov`Objects`", "Objects.wl"},
+          {
+            "KirillBelov`Objects`Extensions`",
+            "Extensions.wl"
+          }
         },
         "Symbols" -> {
           "KirillBelov`Objects`CreateType",
