@@ -8,7 +8,7 @@
 (*Begin package*)
 
 
-BeginPackage["KirillBelov`Objects`"]
+BeginPackage["KirillBelov`Objects`"]; 
 
 
 (* ::Section:: *)
@@ -16,39 +16,39 @@ BeginPackage["KirillBelov`Objects`"]
 
 
 CreateType::usage = 
-"CreateType[type, parent, init, {fields}] create type"
+"CreateType[type, parent, init, {fields}] create type"; 
 
 
 Object::usage = 
-"Object[] base mutable object"
+"Object[] base mutable object"; 
 
 
 TypeQ::usage = 
-"TypeQ[name] check that name is type"
+"TypeQ[name] check that name is type"; 
 
 
 ObjectQ::usage = 
-"ObjectQ[expr] check that expr is mutable object"
+"ObjectQ[expr] check that expr is mutable object"; 
 
 
 (* ::Section::Closed:: *)
 (*Private context*)
 
 
-Begin["`Private`"]
+Begin["`Private`"]; 
 
 
 (* ::Section::Closed:: *)
 (*Object constructor*)
 
 
-SetAttributes[Object, HoldFirst]
+SetAttributes[Object, HoldFirst]; 
 
 
 Options[Object] = {
 	"Icon" -> Import[FileNameJoin[{DirectoryName[$InputFileName, 2], "Images", "ObjectIcon.png"}]], 
 	"Init" -> Identity
-}
+}; 
 
 
 Object[opts: OptionsPattern[]] := 
@@ -62,7 +62,7 @@ With[{symbol = Unique[Context[Object] <> SymbolName[Object] <> "`$"]},
 	symbol["Properties"] := Keys[symbol]; 
 	symbol["Init"] @ Object[symbol]; 
 	Return[Object[symbol]]
-]
+]; 
 
 
 Object[assoc_Association] := 
@@ -76,11 +76,11 @@ If[KeyExistsQ[assoc, "Self"],
 		If[KeyExistsQ[symbol, "Init"], symbol["Init"] @ Object[symbol]]; 
 		Object[symbol]
 	]
-]
+]; 
 
 
 Object[assoc: Except[_Symbol | _Association] ? AssociationQ] := 
-With[{a = assoc}, Object[a]]
+With[{a = assoc}, Object[a]]; 
 
 
 (* ::Section::Closed:: *)
@@ -88,7 +88,7 @@ With[{a = assoc}, Object[a]]
 
 
 Object /: DeleteObject[Object[symbol_Symbol]] := 
-Remove[symbol]
+Remove[symbol]; 
 
 
 (* ::Section::Closed:: *)
@@ -96,21 +96,27 @@ Remove[symbol]
 
 
 Object /: Normal[Object[symbol_Symbol]] := 
-symbol
+symbol; 
 
 
 (* ::Section::Closed:: *)
 (*TypeQ Object*)
 
 
-Object /: TypeQ[Object] = True
+Object /: TypeQ[Object] = 
+True; 
 
 
 (* ::Section::Closed:: *)
 (*ObjectQ Object*)
 
 
-Object /: ObjectQ[Object[symbol_Symbol]] = True
+ObjectQ[___] := 
+False; 
+
+
+Object /: ObjectQ[Object[symbol_Symbol]] = 
+True; 
 
 
 (* ::Section::Closed:: *)
@@ -118,19 +124,19 @@ Object /: ObjectQ[Object[symbol_Symbol]] = True
 
 
 Object[symbol_Symbol][key_String] := 
-symbol[key]
+symbol[key]; 
 
 
 Object[symbol_Symbol][key_Symbol] := 
-symbol[SymbolName[key]]
+symbol[SymbolName[key]]; 
 
 
 Object[symbol_Symbol][key_String, keys__] := 
-symbol[key][keys]
+symbol[key][keys]; 
 
 
 Object[symbol_Symbol][key_Symbol, keys__] := 
-symbol[SymbolName[key]][keys]
+symbol[SymbolName[key]][keys]; 
 
 
 (* ::Section::Closed:: *)
@@ -138,19 +144,19 @@ symbol[SymbolName[key]][keys]
 
 
 Object /: Set[Object[symbol_Symbol][key_String], value_] := 
-symbol[key] = value
+symbol[key] = value; 
 
 
 Object /: SetDelayed[Object[symbol_Symbol][key_String], value_] := 
-symbol[key] := value
+symbol[key] := value; 
 
 
 Object /: Set[Object[symbol_Symbol][key_Symbol], value_] := 
-With[{k = SymbolName[key]}, symbol[k] = value]
+With[{k = SymbolName[key]}, symbol[k] = value]; 
 
 
 Object /: SetDelayed[Object[symbol_Symbol][key_Symbol], value_] := 
-With[{k = SymbolName[key]}, symbol[k] := value]
+With[{k = SymbolName[key]}, symbol[k] := value]; 
 
 
 Object /: Set[Object[symbol_Symbol][keys__, key_String], value_] := 
@@ -162,7 +168,7 @@ With[{part = Object[symbol][keys]},
 			part[key] = value
 	]; 
 	value
-]
+]; 
 
 
 Object /: SetDelayed[Object[symbol_Symbol][keys__, key_String], value_] := 
@@ -173,15 +179,15 @@ With[{part = Object[symbol][keys]},
 		True, 
 			part[key] := value
 	]; 
-]
+]; 
 
 
 Object /: Set[Object[symbol_Symbol][keys__, key_Symbol], value_] := 
-With[{k = SymbolName[key]}, Object[symbol][keys, k] = value]
+With[{k = SymbolName[key]}, Object[symbol][keys, k] = value]; 
 
 
 Object /: SetDelayed[Object[symbol_Symbol][keys__, key_Symbol], value_] := 
-With[{k = SymbolName[key]}, Object[symbol][keys, k] := value]
+With[{k = SymbolName[key]}, Object[symbol][keys, k] := value]; 
 
 
 Object /: Set[name_Symbol, object_Object] := (
@@ -190,7 +196,7 @@ Object /: Set[name_Symbol, object_Object] := (
 	name /: Set[name[keys__], value_] := object[keys] = value; 
 	name /: SetDelayed[name[keys__], value_] := object[keys] := value; 
 	name
-)
+); 
 
 
 (* ::Section:: *)
@@ -215,7 +221,7 @@ Module[{above, below},
 
 
 TypeQ[___] := 
-False
+False; 
 
 
 (* ::Section::Closed:: *)
@@ -232,7 +238,7 @@ Module[{
 	Messages[type] = Normal[<|Messages[type], messages|>]; 
 	Options[type] = Normal[<|Join[Options[type], Normal[fields], {If[init === Automatic, Nothing, "Init" -> init]}]|>]; 
 	type
-]
+]; 
 
 
 CreateType[type_Symbol, parent: _Symbol?TypeQ: Object, init: _Symbol | _Function: Identity, fields_List: {}] := 
@@ -245,18 +251,18 @@ Module[{assoc = Association[Map[
 	]&
 ] @ fields]}, 
 	CreateType[type, parent, init, assoc]
-]
+]; 
 
 
 (* ::Section::Closed:: *)
 (*End private context*)
 
 
-End[] (*`Private`*)
+End[]; (*`Private`*)
 
 
 (* ::Section::Closed:: *)
 (*End package*)
 
 
-EndPackage[] (*KirillBelov`Objects`*)
+EndPackage[]; (*KirillBelov`Objects`*)
