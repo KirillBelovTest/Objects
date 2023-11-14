@@ -9,6 +9,7 @@ PacletObject[
     "PublisherID" -> "KirillBelov",
     "Version" -> "1.0.21",
     "WolframVersion" -> "13+",
+    "PrimaryContext" -> "KirillBelov`Objects`", 
     "Extensions" -> {
       {
         "Kernel",

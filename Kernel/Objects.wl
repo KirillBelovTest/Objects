@@ -159,7 +159,7 @@ Object /: SetDelayed[Object[symbol_Symbol][key_Symbol], value_] :=
 With[{k = SymbolName[key]}, symbol[k] := value]; 
 
 
-Object /: Set[Object[symbol_Symbol][keys__, key_String], value_] := 
+Object /: Set[Object[symbol_Symbol][keys__, key_], value_] := 
 With[{part = Object[symbol][keys]}, 
 	Which[
 		AssociationQ[part], 
@@ -171,7 +171,7 @@ With[{part = Object[symbol][keys]},
 ]; 
 
 
-Object /: SetDelayed[Object[symbol_Symbol][keys__, key_String], value_] := 
+Object /: SetDelayed[Object[symbol_Symbol][keys__, key_], value_] := 
 With[{part = Object[symbol][keys]}, 
 	Which[
 		AssociationQ[part], 
