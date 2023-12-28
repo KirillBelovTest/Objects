@@ -241,7 +241,7 @@ Module[{
 ]; 
 
 
-CreateType[type_Symbol, parent: _Symbol?TypeQ: Object, init: _Symbol | _Function: Identity, fields_List: {}] := 
+CreateType[type_Symbol, parent: _Symbol?TypeQ: Object, init: _Symbol | _Function: Automatic, fields_List: {}] := 
 Module[{assoc = Association[Map[
 	Switch[#, 
 		_String -> _, #, 
