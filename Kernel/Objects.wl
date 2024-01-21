@@ -11,7 +11,7 @@
 BeginPackage["KirillBelov`Objects`"]; 
 
 
-(* ::Section:: *)
+(* ::Section::Closed:: *)
 (*Names*)
 
 
@@ -139,7 +139,7 @@ Object[symbol_Symbol][key_Symbol, keys__] :=
 symbol[SymbolName[key]][keys]; 
 
 
-(* ::Section::Closed:: *)
+(* ::Section:: *)
 (*Set*)
 
 
@@ -195,11 +195,20 @@ Object /: Set[name_Symbol, object_Object] := (
 	Block[{Object}, SetAttributes[Object, HoldFirst]; name = object]; 
 	name /: Set[name[keys__], value_] := object[keys] = value; 
 	name /: SetDelayed[name[keys__], value_] := object[keys] := value; 
+	name /: Unset[name[key_String]] := Unset[object[key]]; 
 	name
 ); 
 
 
 (* ::Section:: *)
+(*UnSet*)
+
+
+Object /: Unset[Object[symbol_Symbol][key_String]] := 
+Unset[symbol[key]]; 
+
+
+(* ::Section::Closed:: *)
 (*Summary Box*)
 
 
