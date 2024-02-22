@@ -45,19 +45,20 @@ Begin["`Private`"];
 SetAttributes[Object, HoldFirst]; 
 
 
+$objectDefaultIcon = 
+Import[FileNameJoin[{DirectoryName[$InputFileName, 2], "Images", "ObjectIcon.png"}]]; 
+
+
 Options[Object] = {
-	"Icon" -> Import[FileNameJoin[{DirectoryName[$InputFileName, 2], "Images", "ObjectIcon.png"}]], 
+	"Icon" :> $objectDefaultIcon, 
 	"Init" -> Identity
 }; 
 
 
 Object[opts: OptionsPattern[]] := 
-With[{symbol = Unique[Context[Object] <> SymbolName[Object] <> "`$"]}, 
+With[{symbol = Unique[Context[Object] <> SymbolName[Object] <> "`$"], fullOpts = Normal[Join[<|Options[Object]|>, <|Flatten[{opts}]|>]]}, 
 	symbol = <||>; 
-	Table[
-		symbol[opt] = OptionValue[Object, Flatten[{opts}], opt], 
-		{opt, Keys[Options[Object]]}
-	]; 
+	Table[opt /. _[k_, v_] :> SetDelayed[symbol[k], v], {opt, fullOpts}]; 
 	symbol["Self"] := symbol; 
 	symbol["Properties"] := Keys[symbol]; 
 	symbol["Init"] @ Object[symbol]; 
@@ -256,7 +257,9 @@ Module[{assoc = Association[Map[
 		_String -> _, #, 
 		_String, # -> Automatic, 
 		_Symbol -> _, SymbolName[#[[1]]] -> #[[2]], 
-		_Symbol, SymbolName[#] -> Automatic  
+		_Symbol, SymbolName[#] -> Automatic, 
+		_Symbol :> _, # /. r_[k_, v] :> r[SymbolName[k], v], 
+		_String :> _, #
 	]&
 ] @ fields]}, 
 	CreateType[type, parent, init, assoc]
