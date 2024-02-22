@@ -38,7 +38,7 @@ ObjectQ::usage =
 Begin["`Private`"]; 
 
 
-(* ::Section::Closed:: *)
+(* ::Section:: *)
 (*Object constructor*)
 
 
@@ -56,9 +56,13 @@ Options[Object] = {
 
 
 Object[opts: OptionsPattern[]] := 
-With[{symbol = Unique[Context[Object] <> SymbolName[Object] <> "`$"], fullOpts = Normal[Join[<|Options[Object]|>, <|Flatten[{opts}]|>]]}, 
+With[{symbol = Unique[Context[Object] <> SymbolName[Object] <> "`$"], 
+	fullOpts = Normal[Join[<|Options[Object]|>, <|Flatten[{opts}]|>]]}, 
 	symbol = <||>; 
-	Table[opt /. _[k_, v_] :> SetDelayed[symbol[k], v], {opt, fullOpts}]; 
+	Table[opt /. {
+		_[k_String, v_] :> SetDelayed[symbol[k], v], 
+		_[k_Symbol, v_] :> With[{ks = SymbolName[k]}, SetDelayed[symbol[ks], v]]
+	}, {opt, fullOpts}]; 
 	symbol["Self"] := symbol; 
 	symbol["Properties"] := Keys[symbol]; 
 	symbol["Init"] @ Object[symbol]; 
@@ -234,7 +238,7 @@ TypeQ[___] :=
 False; 
 
 
-(* ::Section::Closed:: *)
+(* ::Section:: *)
 (*Create type*)
 
 

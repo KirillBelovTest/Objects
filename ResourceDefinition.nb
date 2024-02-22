@@ -37,7 +37,7 @@ Cell["", "FileManagerTopSpacer",
  CellGroupingRules->{"SectionGrouping", 99},
  TaggingRules->{},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->240803398,ExpressionUUID->"7ccb23a9-346f-7a40-bfce-44eefca1f839"],
+ CellID->240803398,ExpressionUUID->"b47d69d4-15b7-134f-b94b-c3a1f71427b9"],
 
 Cell[CellGroupData[{
 
@@ -62,7 +62,7 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "Documentation"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"aa4f5145-f146-e849-8d57-a14432a38fb5"]], \
+   "Text"}]],ExpressionUUID->"38d1cbdb-ec53-ff49-aa1a-b60b6255cb4c"]], \
 "FileManagerDirectory",
  CellMargins->{{Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 100},
@@ -73,7 +73,7 @@ Cell[TextData[Cell[BoxData[
       TemplateBox[{}, "FileManagerDocumentationIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->531863989,ExpressionUUID->"46658830-3a41-1a4d-980c-4a35c2d74c75"],
+ CellID->531863989,ExpressionUUID->"01324cb8-16d6-0546-84ad-6c98d512b281"],
 
 Cell[CellGroupData[{
 
@@ -98,7 +98,7 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "Documentation", "English"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"1d8d1649-c397-6944-a2e6-6db9af174b57"]], \
+   "Text"}]],ExpressionUUID->"94375617-0c4c-204c-b815-db3618c4c8ac"]], \
 "FileManagerDirectory",
  CellMargins->{{23 + Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 110},
@@ -109,7 +109,7 @@ Cell[TextData[Cell[BoxData[
       TemplateBox[{}, "FileManagerDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->9297440,ExpressionUUID->"05cd6d1f-6e30-8f42-a0d4-66b03985e29c"],
+ CellID->9297440,ExpressionUUID->"fbf2d159-85b6-c34d-beb4-cadfce0c9314"],
 
 Cell[CellGroupData[{
 
@@ -134,7 +134,7 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "Documentation", "English", "Guides"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"9c2ba7b4-796c-7348-8d8a-0ccb5a798445"]], \
+   "Text"}]],ExpressionUUID->"efe4461c-eaa6-be4c-b390-a4581931cde5"]], \
 "FileManagerDirectory",
  CellMargins->{{46 + Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 120},
@@ -145,7 +145,7 @@ Cell[TextData[Cell[BoxData[
       TemplateBox[{}, "FileManagerDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->398155563,ExpressionUUID->"48196a6f-a822-d344-8ed7-4ec9e693107e"],
+ CellID->398155563,ExpressionUUID->"1044ffde-f2c2-ac40-98c1-c091bf2e0897"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -170,7 +170,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->216204145,ExpressionUUID->"a7512822-0728-d446-9bf8-6f12e7962090"]
+ CellID->216204145,ExpressionUUID->"66939059-c6c1-6345-a16d-04c6de225d85"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -196,7 +196,7 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "Documentation", "English", "ReferencePages"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"c2b41389-d626-d846-80ce-2b30abaa2ee3"]], \
+   "Text"}]],ExpressionUUID->"0ba01c42-6d2a-2146-9fb5-1c7361715f8b"]], \
 "FileManagerDirectory",
  CellMargins->{{46 + Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 120},
@@ -207,7 +207,7 @@ Cell[TextData[Cell[BoxData[
       TemplateBox[{}, "FileManagerDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->80018779,ExpressionUUID->"ffe1889b-0a86-2640-9097-d5705f44ec97"],
+ CellID->80018779,ExpressionUUID->"f1bb8db9-2ded-d34f-9376-c8e14e1d0c62"],
 
 Cell[CellGroupData[{
 
@@ -233,7 +233,7 @@ Cell[TextData[Cell[BoxData[
     "Symbols"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"9684720f-2e56-9844-a856-72ae2367badc"]], \
+   "Text"}]],ExpressionUUID->"bf3ca03e-cd30-224d-9233-7bd244654e79"]], \
 "FileManagerDirectory",
  CellMargins->{{69 + Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 130},
@@ -244,7 +244,7 @@ Cell[TextData[Cell[BoxData[
       TemplateBox[{}, "FileManagerDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->593925824,ExpressionUUID->"6ec659fc-06c8-6b47-b225-199a327af7eb"],
+ CellID->593925824,ExpressionUUID->"389ff787-695f-fe4d-b006-2432b27c0396"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -270,7 +270,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->306279774,ExpressionUUID->"598bfc81-b898-544b-bfcf-7b85604d41fe"],
+ CellID->306279774,ExpressionUUID->"e94d3983-1164-2e4d-be33-453a0a7e990c"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -296,7 +296,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->204211375,ExpressionUUID->"e8cfa208-ce66-3048-9f32-d39abd4d1ebf"],
+ CellID->204211375,ExpressionUUID->"e8f4e024-0484-954a-b2d1-a5c1e01b1986"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -322,7 +322,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->470326208,ExpressionUUID->"88df55cd-e415-5547-889e-772178aa85a5"],
+ CellID->470326208,ExpressionUUID->"4793f0e7-a36c-ce41-8389-b762bd558ed4"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -348,7 +348,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->83984423,ExpressionUUID->"c9fc4a26-deed-d04f-802b-93b0b9668a4b"]
+ CellID->83984423,ExpressionUUID->"08504ddf-1d6d-1f41-a665-caed277aa5b4"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -377,7 +377,7 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "Images"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"1002c3ce-33ab-1145-b1b3-da259319fc42"]], \
+   "Text"}]],ExpressionUUID->"64a4a69f-9aa8-a74f-9de5-7513b3f8dd85"]], \
 "FileManagerDirectory",
  CellMargins->{{Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 100},
@@ -388,7 +388,7 @@ Cell[TextData[Cell[BoxData[
       TemplateBox[{}, "FileManagerDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->598756316,ExpressionUUID->"89f8578c-5553-074b-a5f7-8e5ba7803047"],
+ CellID->598756316,ExpressionUUID->"e5f2ff40-6373-cd45-bc25-71177cfb5783"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -412,7 +412,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerPNGIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->341247244,ExpressionUUID->"e9af30c4-790f-2042-a350-405a5807ee51"],
+ CellID->341247244,ExpressionUUID->"90354298-93d3-3748-9df1-b5d7195d432a"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -436,7 +436,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerPNGIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->510943145,ExpressionUUID->"5942b0d9-07d0-c24f-9062-d03a97ed0d61"]
+ CellID->510943145,ExpressionUUID->"dc3bb9a2-5c25-2647-8f51-f03e729f97c0"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -462,7 +462,7 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "Kernel"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"b3afba1a-1957-bf4e-81e6-b937110df18a"]], \
+   "Text"}]],ExpressionUUID->"7a19ab96-5040-844b-94bd-a003aaa7de29"]], \
 "FileManagerDirectory",
  CellMargins->{{Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 100},
@@ -473,7 +473,7 @@ Cell[TextData[Cell[BoxData[
       TemplateBox[{}, "FileManagerKernelIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->157132538,ExpressionUUID->"91d1776e-a5be-0340-aeeb-1231bc428b7e"],
+ CellID->157132538,ExpressionUUID->"9b202061-8db4-d84b-8a4f-af9860485044"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -497,7 +497,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerWLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->166544018,ExpressionUUID->"aa881fb1-4e82-d043-8a1e-1abc186c6216"]
+ CellID->166544018,ExpressionUUID->"3430ef63-d7ec-9b4a-9a13-ad197ad83b6b"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -522,7 +522,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerPacletInfoIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->371851653,ExpressionUUID->"db4f8d33-b085-7142-b321-d09ecd1ea826"],
+ CellID->371851653,ExpressionUUID->"0cb4d20a-dc61-da46-930a-11dd05c0e1ce"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -546,7 +546,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerTXTIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->404313693,ExpressionUUID->"bc85f2ea-801d-e340-8224-97ca12c3959e"],
+ CellID->404313693,ExpressionUUID->"c35360c9-5560-194f-9899-f25962a0573c"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -570,7 +570,7 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->130703434,ExpressionUUID->"ef8a848e-5354-7343-bbe6-4f8d281875d5"],
+ CellID->130703434,ExpressionUUID->"e5b73474-8293-d14b-b876-974265abcaab"],
 
 Cell[CellGroupData[{
 
@@ -595,7 +595,7 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "Tests"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"dd23ea0f-0856-c141-8456-f2a01dd54898"]], \
+   "Text"}]],ExpressionUUID->"cc16e970-97a8-164f-9b3b-a90f75bc4cc1"]], \
 "FileManagerDirectory",
  CellMargins->{{Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 100},
@@ -606,7 +606,7 @@ Cell[TextData[Cell[BoxData[
       TemplateBox[{}, "FileManagerDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->166783835,ExpressionUUID->"aca31260-de62-4b4c-886d-7be7789cb2bc"],
+ CellID->166783835,ExpressionUUID->"ca56cd63-b682-5a48-8b5d-5a1284fe8f7f"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -630,14 +630,14 @@ Cell[BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->155557435,ExpressionUUID->"d301614c-8719-d447-b63b-c2803b3ccb55"]
+ CellID->155557435,ExpressionUUID->"7318dc75-c6b5-524e-8bb4-ce15e798f19e"]
 }, Open  ]],
 
 Cell["", "FileManagerBottomSpacer",
  CellGroupingRules->{"SectionGrouping", 100},
  TaggingRules->{},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->180645280,ExpressionUUID->"17906a24-8002-e840-ba9f-cb0a8a1f9699"]
+ CellID->180645280,ExpressionUUID->"806092fa-29cf-4140-be96-880483d828ea"]
 }, Open  ]]
 }, Open  ]],
 
@@ -1268,7 +1268,7 @@ Cell[BoxData[
    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}]], "Input", "Excluded",
  TaggingRules->{},
  InitializationCell->True,
- CellLabel->"In[1]:=",
+ CellLabel->"In[30]:=",
  CellID->37995798,ExpressionUUID->"1990fd35-b42a-4b38-bc1a-d1cc741922e6"],
 
 Cell[BoxData[
@@ -1277,16 +1277,17 @@ Cell[BoxData[
    RowBox[{"Directory", "[", "]"}], "]"}], ";"}]], "Input", "Excluded",
  TaggingRules->{},
  InitializationCell->True,
- CellLabel->"In[2]:=",
+ CellLabel->"In[31]:=",
  CellID->996717066,ExpressionUUID->"d1fe2c8b-b810-48f2-a2d1-10157cf7ec5a"],
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{"Needs", "[", "\"\<KirillBelov`Objects`\>\"", "]"}], 
+  RowBox[{"Get", "[", "\"\<KirillBelov`Objects`\>\"", "]"}], 
   ";"}]], "Input", "Excluded",
  TaggingRules->{},
  InitializationCell->True,
- CellLabel->"In[3]:=",
+ CellChangeTimes->{{3.917583014635706*^9, 3.9175830150999985`*^9}},
+ CellLabel->"In[32]:=",
  CellID->172764492,ExpressionUUID->"a297cb4f-b8d8-4b8b-aede-044547356489"]
 }, Open  ]],
 
@@ -1304,7 +1305,7 @@ Cell["Import the package:", "Text",
 Cell[BoxData[
  RowBox[{"<<", "KirillBelov`Objects`"}]], "Input",
  TaggingRules->{},
- CellLabel->"In[4]:=",
+ CellLabel->"In[33]:=",
  CellID->95796112,ExpressionUUID->"376a2481-816a-4e80-91a9-66291ede6645"],
 
 Cell["Basic syntax:", "Text",
@@ -1382,23 +1383,28 @@ Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{"CreateType", "[", 
   RowBox[{"Human", ",", " ", "Identity", ",", " ", 
-   RowBox[{"{", 
+   RowBox[{"{", "\[IndentingNewLine]", 
     RowBox[{
      RowBox[{"\"\<Icon\>\"", " ", "->", " ", 
       RowBox[{"Style", "[", 
        RowBox[{"\"\<\|01f468\>\"", ",", " ", "28"}], "]"}]}], ",", " ", 
-     "\"\<Name\>\"", ",", " ", 
-     RowBox[{"Lang", " ", "->", " ", "\"\<EN\>\""}], ",", " ", "Education", 
-     ",", " ", "Age", ",", " ", "Address"}], "}"}]}], "]"}]], "Input",
+     "\[IndentingNewLine]", "\"\<Name\>\"", ",", " ", "\[IndentingNewLine]", 
+     RowBox[{"Lang", " ", "->", " ", "\"\<EN\>\""}], ",", " ", 
+     "\[IndentingNewLine]", "Education", ",", " ", "\[IndentingNewLine]", 
+     "Age", ",", " ", "\[IndentingNewLine]", "Address"}], 
+    "\[IndentingNewLine]", "}"}]}], "]"}]], "Input",
  TaggingRules->{},
- CellLabel->"In[5]:=",
+ CellChangeTimes->{{3.917582570521511*^9, 3.9175825894541264`*^9}, {
+  3.917582647196348*^9, 3.917582657611141*^9}},
+ CellLabel->"In[34]:=",
  CellID->415388182,ExpressionUUID->"aac5dfe2-4f80-4e6f-a052-f452f375250e"],
 
 Cell[BoxData["Human"], "Output",
  TaggingRules->{},
- CellChangeTimes->{3.909062128026768*^9},
- CellLabel->"Out[5]=",
- CellID->10915328,ExpressionUUID->"de8b9f90-8237-4040-84d7-518eec02f81f"]
+ CellChangeTimes->{3.909062128026768*^9, 3.91758266706299*^9, 
+  3.9175830245697994`*^9},
+ CellLabel->"Out[34]=",
+ CellID->714632606,ExpressionUUID->"72fbfca8-08b4-0340-b4cf-30be4cacd1cb"]
 }, Open  ]],
 
 Cell["And not we can create some human:", "Text",
@@ -1409,16 +1415,22 @@ Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"Kirill", " ", "=", " ", 
-  RowBox[{"Human", "[", 
+  RowBox[{"Human", "[", "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"\"\<Name\>\"", " ", "->", " ", "\"\<Kirill Belov\>\""}], ",", 
-    " ", 
+    " ", "\[IndentingNewLine]", 
     RowBox[{
     "\"\<Education\>\"", " ", "->", " ", "\"\<Saratov State University\>\""}],
-     ",", " ", 
-    RowBox[{"Lang", " ", "->", " ", "\"\<RU\>\""}]}], "]"}]}]], "Input",
+     ",", " ", "\[IndentingNewLine]", 
+    RowBox[{"Lang", " ", "->", " ", "\"\<RU\>\""}], ",", " ", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Age", " ", ":>", " ", 
+     RowBox[{
+      RowBox[{"Now", "[", "\"\<Year\>\"", "]"}], " ", "-", " ", "1992"}]}]}], 
+   "\[IndentingNewLine]", "]"}]}]], "Input",
  TaggingRules->{},
- CellLabel->"In[6]:=",
+ CellChangeTimes->{{3.91758267276083*^9, 3.9175826978533344`*^9}},
+ CellLabel->"In[35]:=",
  CellID->441801627,ExpressionUUID->"a4942068-b73b-47e1-8243-be332891dc7a"],
 
 Cell[BoxData[
@@ -1434,7 +1446,7 @@ Cell[BoxData[
                RowBox[{
                  TagBox["\"Self: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["Global`Human`$11", "SummaryItem"]}], 
+                 TagBox["Global`Human`$14", "SummaryItem"]}], 
                "\[SpanFromLeft]"}, {
                RowBox[{
                  TagBox["\"Properties: \"", "SummaryItemAnnotation"], 
@@ -1465,7 +1477,7 @@ Cell[BoxData[
                RowBox[{
                  TagBox["\"Self: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["Global`Human`$11", "SummaryItem"]}], 
+                 TagBox["Global`Human`$14", "SummaryItem"]}], 
                "\[SpanFromLeft]"}, {
                RowBox[{
                  TagBox["\"Properties: \"", "SummaryItemAnnotation"], 
@@ -1494,14 +1506,15 @@ Cell[BoxData[
        Dynamic[Typeset`open$$], ImageSize -> Automatic]},
      "SummaryPanel"],
     DynamicModuleValues:>{}], "]"}],
-  $CellContext`Human[$CellContext`Human`$11],
+  $CellContext`Human[$CellContext`Human`$14],
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
  TaggingRules->{},
- CellChangeTimes->{3.909062129714245*^9},
- CellLabel->"Out[6]=",
- CellID->72513634,ExpressionUUID->"4bb9dda3-76f4-4dc6-9fbe-f861d8c09762"]
+ CellChangeTimes->{3.909062129714245*^9, 3.9175826995859127`*^9, 
+  3.917583025666073*^9},
+ CellLabel->"Out[35]=",
+ CellID->246547991,ExpressionUUID->"b8a1c726-7191-d548-b604-292891795c99"]
 }, Open  ]],
 
 Cell[TextData[{
@@ -1520,14 +1533,15 @@ Cell[BoxData[
   RowBox[{"Defer", "[", "\"\<Self\>\"", "]"}], "/.", 
   RowBox[{"Normal", "[", "Kirill", "]"}]}]], "Input",
  TaggingRules->{},
- CellLabel->"In[7]:=",
+ CellLabel->"In[36]:=",
  CellID->62369567,ExpressionUUID->"fbc59c99-6caf-4ce8-a35f-1ea295e5294b"],
 
-Cell[BoxData["Global`Human`$11"], "Output",
+Cell[BoxData["Global`Human`$14"], "Output",
  TaggingRules->{},
- CellChangeTimes->{3.9090621323709707`*^9},
- CellLabel->"Out[7]=",
- CellID->310313058,ExpressionUUID->"a9654283-7659-4447-9b81-4c7346a0b9e6"]
+ CellChangeTimes->{3.9090621323709707`*^9, 3.917582705275215*^9, 
+  3.917583028130871*^9},
+ CellLabel->"Out[36]=",
+ CellID->168958440,ExpressionUUID->"8e898146-7a13-504c-ab57-2783c6a915db"]
 }, Open  ]],
 
 Cell["And try to get internal properties:", "Text",
@@ -1539,31 +1553,34 @@ Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{"Normal", "[", "Kirill", "]"}]], "Input",
  TaggingRules->{},
- CellLabel->"In[8]:=",
+ CellLabel->"In[37]:=",
  CellID->449184688,ExpressionUUID->"156f600c-38da-40fb-aaba-b43eb9b95fca"],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
   RowBox[{
-   RowBox[{"\<\"Icon\"\>", "\[Rule]", 
+   RowBox[{"\<\"Icon\"\>", "\[RuleDelayed]", 
     StyleBox["\<\"\|01f468\"\>",
      StripOnInput->False,
      FontSize->28]}], ",", 
-   RowBox[{"\<\"Init\"\>", "\[Rule]", "Identity"}], ",", 
-   RowBox[{"\<\"Name\"\>", "\[Rule]", "\<\"Kirill Belov\"\>"}], ",", 
-   RowBox[{"\<\"Lang\"\>", "\[Rule]", "\<\"RU\"\>"}], ",", 
+   RowBox[{"\<\"Init\"\>", "\[RuleDelayed]", "Identity"}], ",", 
+   RowBox[{"\<\"Name\"\>", "\[RuleDelayed]", "\<\"Kirill Belov\"\>"}], ",", 
+   RowBox[{"\<\"Lang\"\>", "\[RuleDelayed]", "\<\"RU\"\>"}], ",", 
    RowBox[{"\<\"Education\"\>", 
-    "\[Rule]", "\<\"Saratov State University\"\>"}], ",", 
-   RowBox[{"\<\"Age\"\>", "\[Rule]", "Automatic"}], ",", 
-   RowBox[{"\<\"Address\"\>", "\[Rule]", "Automatic"}], ",", 
-   RowBox[{"\<\"Self\"\>", "\[RuleDelayed]", "Global`Human`$11"}], ",", 
+    "\[RuleDelayed]", "\<\"Saratov State University\"\>"}], ",", 
+   RowBox[{"\<\"Age\"\>", "\[RuleDelayed]", 
+    RowBox[{
+     RowBox[{"Now", "[", "\<\"Year\"\>", "]"}], "-", "1992"}]}], ",", 
+   RowBox[{"\<\"Address\"\>", "\[RuleDelayed]", "Automatic"}], ",", 
+   RowBox[{"\<\"Self\"\>", "\[RuleDelayed]", "Global`Human`$14"}], ",", 
    RowBox[{"\<\"Properties\"\>", "\[RuleDelayed]", 
-    RowBox[{"Keys", "[", "Global`Human`$11", "]"}]}]}], 
+    RowBox[{"Keys", "[", "Global`Human`$14", "]"}]}]}], 
   "\[RightAssociation]"}]], "Output",
  TaggingRules->{},
- CellChangeTimes->{3.909062133746359*^9},
- CellLabel->"Out[8]=",
- CellID->293320994,ExpressionUUID->"f970da80-10cb-4497-a392-93743abbfdad"]
+ CellChangeTimes->{3.909062133746359*^9, 3.9175827073168316`*^9, 
+  3.9175830295063744`*^9},
+ CellLabel->"Out[37]=",
+ CellID->143248146,ExpressionUUID->"40a75d21-95a6-d74d-8648-426c75a7b007"]
 }, Open  ]],
 
 Cell[TextData[{
@@ -1581,7 +1598,7 @@ Cell[BoxData[
  RowBox[{"Kirill", " ", "/@", " ", 
   RowBox[{"Kirill", "[", "\"\<Properties\>\"", "]"}]}]], "Input",
  TaggingRules->{},
- CellLabel->"In[9]:=",
+ CellLabel->"In[38]:=",
  CellID->29931533,ExpressionUUID->"40b72306-9fa6-4fe5-9d23-8f1ad8822be7"],
 
 Cell[BoxData[
@@ -1590,24 +1607,26 @@ Cell[BoxData[
    StyleBox["\<\"\|01f468\"\>",
     StripOnInput->False,
     FontSize->28], ",", "Identity", ",", "\<\"Kirill Belov\"\>", 
-   ",", "\<\"RU\"\>", ",", "\<\"Saratov State University\"\>", ",", 
-   "Automatic", ",", "Automatic", ",", 
+   ",", "\<\"RU\"\>", ",", "\<\"Saratov State University\"\>", ",", "32", ",",
+    "Automatic", ",", 
    RowBox[{"\[LeftAssociation]", 
     RowBox[{
-     RowBox[{"\<\"Icon\"\>", "\[Rule]", 
+     RowBox[{"\<\"Icon\"\>", "\[RuleDelayed]", 
       StyleBox["\<\"\|01f468\"\>",
        StripOnInput->False,
        FontSize->28]}], ",", 
-     RowBox[{"\<\"Init\"\>", "\[Rule]", "Identity"}], ",", 
-     RowBox[{"\<\"Name\"\>", "\[Rule]", "\<\"Kirill Belov\"\>"}], ",", 
-     RowBox[{"\<\"Lang\"\>", "\[Rule]", "\<\"RU\"\>"}], ",", 
+     RowBox[{"\<\"Init\"\>", "\[RuleDelayed]", "Identity"}], ",", 
+     RowBox[{"\<\"Name\"\>", "\[RuleDelayed]", "\<\"Kirill Belov\"\>"}], ",", 
+     RowBox[{"\<\"Lang\"\>", "\[RuleDelayed]", "\<\"RU\"\>"}], ",", 
      RowBox[{"\<\"Education\"\>", 
-      "\[Rule]", "\<\"Saratov State University\"\>"}], ",", 
-     RowBox[{"\<\"Age\"\>", "\[Rule]", "Automatic"}], ",", 
-     RowBox[{"\<\"Address\"\>", "\[Rule]", "Automatic"}], ",", 
-     RowBox[{"\<\"Self\"\>", "\[RuleDelayed]", "Global`Human`$11"}], ",", 
+      "\[RuleDelayed]", "\<\"Saratov State University\"\>"}], ",", 
+     RowBox[{"\<\"Age\"\>", "\[RuleDelayed]", 
+      RowBox[{
+       RowBox[{"Now", "[", "\<\"Year\"\>", "]"}], "-", "1992"}]}], ",", 
+     RowBox[{"\<\"Address\"\>", "\[RuleDelayed]", "Automatic"}], ",", 
+     RowBox[{"\<\"Self\"\>", "\[RuleDelayed]", "Global`Human`$14"}], ",", 
      RowBox[{"\<\"Properties\"\>", "\[RuleDelayed]", 
-      RowBox[{"Keys", "[", "Global`Human`$11", "]"}]}]}], 
+      RowBox[{"Keys", "[", "Global`Human`$14", "]"}]}]}], 
     "\[RightAssociation]"}], ",", 
    RowBox[{"{", 
     RowBox[{"\<\"Icon\"\>", ",", "\<\"Init\"\>", ",", "\<\"Name\"\>", 
@@ -1615,9 +1634,10 @@ Cell[BoxData[
      ",", "\<\"Address\"\>", ",", "\<\"Self\"\>", ",", "\<\"Properties\"\>"}],
      "}"}]}], "}"}]], "Output",
  TaggingRules->{},
- CellChangeTimes->{3.909062135371369*^9},
- CellLabel->"Out[9]=",
- CellID->181632513,ExpressionUUID->"91a25452-4fde-4c6b-a176-bf925c1bd250"]
+ CellChangeTimes->{3.909062135371369*^9, 3.9175827121016426`*^9, 
+  3.9175830329549522`*^9},
+ CellLabel->"Out[38]=",
+ CellID->343576498,ExpressionUUID->"298e4687-87bc-534c-9de4-d36c85360092"]
 }, Open  ]],
 
 Cell["Also you can get property names:", "Text",
@@ -1629,7 +1649,7 @@ Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{"Kirill", "[", "\"\<Properties\>\"", "]"}]], "Input",
  TaggingRules->{},
- CellLabel->"In[10]:=",
+ CellLabel->"In[39]:=",
  CellID->42330692,ExpressionUUID->"63dd024f-5bdc-41aa-97da-169b25f3d855"],
 
 Cell[BoxData[
@@ -1639,9 +1659,10 @@ Cell[BoxData[
    ",", "\<\"Address\"\>", ",", "\<\"Self\"\>", ",", "\<\"Properties\"\>"}], 
   "}"}]], "Output",
  TaggingRules->{},
- CellChangeTimes->{3.909062137071828*^9},
- CellLabel->"Out[10]=",
- CellID->1144641,ExpressionUUID->"72b61b69-0aaf-4911-89c5-f9539ad3a5fd"]
+ CellChangeTimes->{3.909062137071828*^9, 3.9175827158293457`*^9, 
+  3.917583039283024*^9},
+ CellLabel->"Out[39]=",
+ CellID->547156063,ExpressionUUID->"a5a0546c-336b-6e42-b3ea-a8a452eb7982"]
 }, Open  ]],
 
 Cell["\<\
@@ -1717,14 +1738,15 @@ Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{"Kirill", "@", "Name"}]], "Input",
  TaggingRules->{},
- CellLabel->"In[11]:=",
+ CellLabel->"In[40]:=",
  CellID->604739077,ExpressionUUID->"f40c4642-3010-42b0-a1f4-d496b010df96"],
 
 Cell[BoxData["\<\"Kirill Belov\"\>"], "Output",
  TaggingRules->{},
- CellChangeTimes->{3.909062140853069*^9},
- CellLabel->"Out[11]=",
- CellID->325352960,ExpressionUUID->"164ea9ff-851b-4d81-a09a-6ebf8f524852"]
+ CellChangeTimes->{3.909062140853069*^9, 3.917582720490513*^9, 
+  3.917583042019615*^9},
+ CellLabel->"Out[40]=",
+ CellID->13977627,ExpressionUUID->"c1cb7d48-f5e3-fb47-b01a-0607ac1afa98"]
 }, Open  ]],
 
 Cell["\<\
@@ -1748,7 +1770,7 @@ Cell[BoxData[
       RowBox[{"\"\<\|01f467\>\"", ",", " ", "28"}], "]"}]}], ",", " ", 
     RowBox[{"Lang", " ", "->", " ", "\"\<RU\>\""}]}], "]"}]}]], "Input",
  TaggingRules->{},
- CellLabel->"In[12]:=",
+ CellLabel->"In[41]:=",
  CellID->237946798,ExpressionUUID->"186d2969-0f8c-4f6f-b038-b520e2743cc7"],
 
 Cell[BoxData[
@@ -1764,7 +1786,7 @@ Cell[BoxData[
                RowBox[{
                  TagBox["\"Self: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["Global`Human`$12", "SummaryItem"]}], 
+                 TagBox["Global`Human`$15", "SummaryItem"]}], 
                "\[SpanFromLeft]"}, {
                RowBox[{
                  TagBox["\"Properties: \"", "SummaryItemAnnotation"], 
@@ -1779,7 +1801,8 @@ Cell[BoxData[
                     "}"}], "SummaryItem"]}], "\[SpanFromLeft]"}}, 
              GridBoxAlignment -> {
               "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
-             False, GridBoxItemSize -> {
+             False, 
+             GridBoxItemSize -> {
               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
              GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
               BaseStyle -> {
@@ -1795,7 +1818,7 @@ Cell[BoxData[
                RowBox[{
                  TagBox["\"Self: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["Global`Human`$12", "SummaryItem"]}], 
+                 TagBox["Global`Human`$15", "SummaryItem"]}], 
                "\[SpanFromLeft]"}, {
                RowBox[{
                  TagBox["\"Properties: \"", "SummaryItemAnnotation"], 
@@ -1824,14 +1847,15 @@ Cell[BoxData[
        Dynamic[Typeset`open$$], ImageSize -> Automatic]},
      "SummaryPanel"],
     DynamicModuleValues:>{}], "]"}],
-  $CellContext`Human[$CellContext`Human`$12],
+  $CellContext`Human[$CellContext`Human`$15],
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
  TaggingRules->{},
- CellChangeTimes->{3.909062142275505*^9},
- CellLabel->"Out[12]=",
- CellID->193456794,ExpressionUUID->"4448784b-e367-4563-9e81-08ae9b7c17f4"]
+ CellChangeTimes->{3.909062142275505*^9, 3.9175827226311207`*^9, 
+  3.9175830434314766`*^9},
+ CellLabel->"Out[41]=",
+ CellID->192064312,ExpressionUUID->"98e9f138-1b37-d64f-9d3b-eb2d02cb2d49"]
 }, Open  ]],
 
 Cell["And now Kirill object looks like:", "Text",
@@ -1840,94 +1864,118 @@ Cell["And now Kirill object looks like:", "Text",
 
 Cell[CellGroupData[{
 
-Cell[BoxData["Kirill"], "Input",
+Cell[BoxData[
+ RowBox[{"Kirill", "[", "\"\<Self\>\"", "]"}]], "Input",
  TaggingRules->{},
- CellLabel->"In[13]:=",
+ CellChangeTimes->{{3.9175830511733494`*^9, 3.917583053097412*^9}},
+ CellLabel->"In[43]:=",
  CellID->373644820,ExpressionUUID->"0b4592a5-ac91-4f5c-8d3b-8ee6cb54d7c7"],
 
 Cell[BoxData[
- InterpretationBox[
+ RowBox[{"\[LeftAssociation]", 
   RowBox[{
-   TagBox["Human",
-    "SummaryHead"], "[", 
-   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
-    TemplateBox[{
-      PaneSelectorBox[{False -> GridBox[{{
-            StyleBox["\"\|01f468\"", 28, StripOnInput -> False], 
-            GridBox[{{
-               RowBox[{
-                 TagBox["\"Self: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox["Global`Human`$11", "SummaryItem"]}], 
-               "\[SpanFromLeft]"}, {
-               RowBox[{
-                 TagBox["\"Properties: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox[
-                  RowBox[{"{", 
+   RowBox[{"\<\"Icon\"\>", "\[RuleDelayed]", 
+    StyleBox["\<\"\|01f468\"\>",
+     StripOnInput->False,
+     FontSize->28]}], ",", 
+   RowBox[{"\<\"Init\"\>", "\[RuleDelayed]", "Identity"}], ",", 
+   RowBox[{"\<\"Name\"\>", "\[RuleDelayed]", "\<\"Kirill Belov\"\>"}], ",", 
+   RowBox[{"\<\"Lang\"\>", "\[RuleDelayed]", "\<\"RU\"\>"}], ",", 
+   RowBox[{"\<\"Education\"\>", 
+    "\[RuleDelayed]", "\<\"Saratov State University\"\>"}], ",", 
+   RowBox[{"\<\"Age\"\>", "\[RuleDelayed]", 
+    RowBox[{
+     RowBox[{"Now", "[", "\<\"Year\"\>", "]"}], "-", "1992"}]}], ",", 
+   RowBox[{"\<\"Address\"\>", "\[RuleDelayed]", "Automatic"}], ",", 
+   RowBox[{"\<\"Self\"\>", "\[RuleDelayed]", "Global`Human`$14"}], ",", 
+   RowBox[{"\<\"Properties\"\>", "\[RuleDelayed]", 
+    RowBox[{"Keys", "[", "Global`Human`$14", "]"}]}], ",", 
+   RowBox[{"\<\"Child\"\>", "\[Rule]", 
+    InterpretationBox[
+     RowBox[{
+      TagBox["Human",
+       "SummaryHead"], "[", 
+      DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = 
+       "Ready"}, 
+       TemplateBox[{
+         PaneSelectorBox[{False -> GridBox[{{
+               StyleBox["\"\|01f467\"", 28, StripOnInput -> False], 
+               GridBox[{{
+                  RowBox[{
+                    TagBox["\"Self: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["Global`Human`$15", "SummaryItem"]}], 
+                  "\[SpanFromLeft]"}, {
+                  RowBox[{
+                    TagBox["\"Properties: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    RowBox[{"{", 
                     
                     RowBox[{
                     "\"Icon\"", ",", "\"Init\"", ",", "\"Name\"", ",", 
                     "\"Lang\"", ",", "\"Education\"", ",", "\"Age\"", ",", 
-                    "\"Address\"", ",", "\"Self\"", ",", "\"Properties\"", 
-                    ",", "\"Child\""}], "}"}], "SummaryItem"]}], 
-               "\[SpanFromLeft]"}}, 
-             GridBoxAlignment -> {
-              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
-             False, GridBoxItemSize -> {
+                    "\"Address\"", ",", "\"Self\"", ",", "\"Properties\""}], 
+                    "}"}], "SummaryItem"]}], "\[SpanFromLeft]"}}, 
+                GridBoxAlignment -> {
+                 "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+                False, GridBoxItemSize -> {
+                 "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                GridBoxSpacings -> {
+                 "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                BaseStyle -> {
+                 ShowStringCharacters -> False, NumberMarks -> False, 
+                  PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+             GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+             AutoDelete -> False, 
+             GridBoxItemSize -> {
               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
-              BaseStyle -> {
-              ShowStringCharacters -> False, NumberMarks -> False, 
-               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
-          AutoDelete -> False, 
-          GridBoxItemSize -> {
-           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-          BaselinePosition -> {1, 1}], True -> GridBox[{{
-            StyleBox["\"\|01f468\"", 28, StripOnInput -> False], 
-            GridBox[{{
-               RowBox[{
-                 TagBox["\"Self: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox["Global`Human`$11", "SummaryItem"]}], 
-               "\[SpanFromLeft]"}, {
-               RowBox[{
-                 TagBox["\"Properties: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox[
-                  RowBox[{"{", 
+             BaselinePosition -> {1, 1}], True -> GridBox[{{
+               StyleBox["\"\|01f467\"", 28, StripOnInput -> False], 
+               GridBox[{{
+                  RowBox[{
+                    TagBox["\"Self: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["Global`Human`$15", "SummaryItem"]}], 
+                  "\[SpanFromLeft]"}, {
+                  RowBox[{
+                    TagBox["\"Properties: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    RowBox[{"{", 
                     
                     RowBox[{
                     "\"Icon\"", ",", "\"Init\"", ",", "\"Name\"", ",", 
                     "\"Lang\"", ",", "\"Education\"", ",", "\"Age\"", ",", 
-                    "\"Address\"", ",", "\"Self\"", ",", "\"Properties\"", 
-                    ",", "\"Child\""}], "}"}], "SummaryItem"]}], 
-               "\[SpanFromLeft]"}}, 
-             GridBoxAlignment -> {
-              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
-             False, GridBoxItemSize -> {
+                    "\"Address\"", ",", "\"Self\"", ",", "\"Properties\""}], 
+                    "}"}], "SummaryItem"]}], "\[SpanFromLeft]"}}, 
+                GridBoxAlignment -> {
+                 "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+                False, GridBoxItemSize -> {
+                 "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                GridBoxSpacings -> {
+                 "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                BaseStyle -> {
+                 ShowStringCharacters -> False, NumberMarks -> False, 
+                  PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+             GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+             AutoDelete -> False, 
+             GridBoxItemSize -> {
               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
-              BaseStyle -> {
-              ShowStringCharacters -> False, NumberMarks -> False, 
-               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
-          AutoDelete -> False, 
-          GridBoxItemSize -> {
-           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-          BaselinePosition -> {1, 1}]}, 
-       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
-     "SummaryPanel"],
-    DynamicModuleValues:>{}], "]"}],
-  $CellContext`Human[$CellContext`Human`$11],
-  Editable->False,
-  SelectWithContents->True,
-  Selectable->False]], "Output",
+             BaselinePosition -> {1, 1}]}, 
+          Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+        "SummaryPanel"],
+       DynamicModuleValues:>{}], "]"}],
+     $CellContext`Human[$CellContext`Human`$15],
+     Editable->False,
+     SelectWithContents->True,
+     Selectable->False]}]}], "\[RightAssociation]"}]], "Output",
  TaggingRules->{},
- CellChangeTimes->{3.909062143806735*^9},
- CellLabel->"Out[13]=",
- CellID->414763844,ExpressionUUID->"e669bc07-3d19-4c40-86a5-7475149725d2"]
+ CellChangeTimes->{
+  3.909062143806735*^9, 3.9175827392466908`*^9, {3.917583045461111*^9, 
+   3.9175830534488354`*^9}},
+ CellLabel->"Out[43]=",
+ CellID->253378500,ExpressionUUID->"5fd840a3-617d-dd48-a49d-457715410e2b"]
 }, Open  ]],
 
 Cell["You can get the name of the child:", "Text",
@@ -1940,14 +1988,15 @@ Cell[BoxData[
  RowBox[{"Kirill", "[", 
   RowBox[{"Child", ",", " ", "Name"}], "]"}]], "Input",
  TaggingRules->{},
- CellLabel->"In[14]:=",
+ CellLabel->"In[44]:=",
  CellID->925869040,ExpressionUUID->"1861f29b-356e-44b8-8025-0bf3a4c9f514"],
 
 Cell[BoxData["\<\"Zlata\"\>"], "Output",
  TaggingRules->{},
- CellChangeTimes->{3.909062145073487*^9},
- CellLabel->"Out[14]=",
- CellID->167251607,ExpressionUUID->"9d4198d2-8526-460f-be9c-23c4261cf2a4"]
+ CellChangeTimes->{3.909062145073487*^9, 3.9175827408351345`*^9, 
+  3.9175830572978916`*^9},
+ CellLabel->"Out[44]=",
+ CellID->740211294,ExpressionUUID->"2ad901cd-3ebb-de46-8cd7-9a2641ba13a3"]
 }, Open  ]],
 
 Cell["Also you can set any property:", "Text",
@@ -1962,14 +2011,15 @@ Cell[BoxData[
    RowBox[{"\"\<Child\>\"", ",", " ", "\"\<Name\>\""}], "]"}], " ", "=", " ", 
   "\"\<Zlata Belova\>\""}]], "Input",
  TaggingRules->{},
- CellLabel->"In[15]:=",
+ CellLabel->"In[45]:=",
  CellID->1490241,ExpressionUUID->"878121a4-2df9-4d1d-9b5d-d0f676e8b2be"],
 
 Cell[BoxData["\<\"Zlata Belova\"\>"], "Output",
  TaggingRules->{},
- CellChangeTimes->{3.9090621463547263`*^9},
- CellLabel->"Out[15]=",
- CellID->1309071,ExpressionUUID->"8317f241-64eb-4920-b1b2-0bb0f35be21a"]
+ CellChangeTimes->{3.9090621463547263`*^9, 3.917582751126627*^9, 
+  3.9175830605859413`*^9},
+ CellLabel->"Out[45]=",
+ CellID->28111621,ExpressionUUID->"68c32b98-f50a-9d41-8291-24385eb74c7b"]
 }, Open  ]],
 
 Cell["And now Zlata looks like:", "Text",
@@ -1979,92 +2029,36 @@ Cell["And now Zlata looks like:", "Text",
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"Kirill", "@", "Child"}]], "Input",
+ RowBox[{"Kirill", "[", 
+  RowBox[{"Child", ",", " ", "\"\<Self\>\""}], "]"}]], "Input",
  TaggingRules->{},
- CellLabel->"In[16]:=",
+ CellChangeTimes->{{3.9175830669383163`*^9, 3.9175830698883114`*^9}},
+ CellLabel->"In[47]:=",
  CellID->227233029,ExpressionUUID->"0e7a47d1-2930-4f8a-973f-6ac627c20e64"],
 
 Cell[BoxData[
- InterpretationBox[
+ RowBox[{"\[LeftAssociation]", 
   RowBox[{
-   TagBox["Human",
-    "SummaryHead"], "[", 
-   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
-    TemplateBox[{
-      PaneSelectorBox[{False -> GridBox[{{
-            StyleBox["\"\|01f467\"", 28, StripOnInput -> False], 
-            GridBox[{{
-               RowBox[{
-                 TagBox["\"Self: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox["Global`Human`$12", "SummaryItem"]}], 
-               "\[SpanFromLeft]"}, {
-               RowBox[{
-                 TagBox["\"Properties: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox[
-                  RowBox[{"{", 
-                    
-                    RowBox[{
-                    "\"Icon\"", ",", "\"Init\"", ",", "\"Name\"", ",", 
-                    "\"Lang\"", ",", "\"Education\"", ",", "\"Age\"", ",", 
-                    "\"Address\"", ",", "\"Self\"", ",", "\"Properties\""}], 
-                    "}"}], "SummaryItem"]}], "\[SpanFromLeft]"}}, 
-             GridBoxAlignment -> {
-              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
-             False, GridBoxItemSize -> {
-              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
-              BaseStyle -> {
-              ShowStringCharacters -> False, NumberMarks -> False, 
-               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
-          AutoDelete -> False, 
-          GridBoxItemSize -> {
-           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-          BaselinePosition -> {1, 1}], True -> GridBox[{{
-            StyleBox["\"\|01f467\"", 28, StripOnInput -> False], 
-            GridBox[{{
-               RowBox[{
-                 TagBox["\"Self: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox["Global`Human`$12", "SummaryItem"]}], 
-               "\[SpanFromLeft]"}, {
-               RowBox[{
-                 TagBox["\"Properties: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox[
-                  RowBox[{"{", 
-                    
-                    RowBox[{
-                    "\"Icon\"", ",", "\"Init\"", ",", "\"Name\"", ",", 
-                    "\"Lang\"", ",", "\"Education\"", ",", "\"Age\"", ",", 
-                    "\"Address\"", ",", "\"Self\"", ",", "\"Properties\""}], 
-                    "}"}], "SummaryItem"]}], "\[SpanFromLeft]"}}, 
-             GridBoxAlignment -> {
-              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
-             False, GridBoxItemSize -> {
-              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
-              BaseStyle -> {
-              ShowStringCharacters -> False, NumberMarks -> False, 
-               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
-          AutoDelete -> False, 
-          GridBoxItemSize -> {
-           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-          BaselinePosition -> {1, 1}]}, 
-       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
-     "SummaryPanel"],
-    DynamicModuleValues:>{}], "]"}],
-  $CellContext`Human[$CellContext`Human`$12],
-  Editable->False,
-  SelectWithContents->True,
-  Selectable->False]], "Output",
+   RowBox[{"\<\"Icon\"\>", "\[RuleDelayed]", 
+    StyleBox["\<\"\|01f467\"\>",
+     StripOnInput->False,
+     FontSize->28]}], ",", 
+   RowBox[{"\<\"Init\"\>", "\[RuleDelayed]", "Identity"}], ",", 
+   RowBox[{"\<\"Name\"\>", "\[Rule]", "\<\"Zlata Belova\"\>"}], ",", 
+   RowBox[{"\<\"Lang\"\>", "\[RuleDelayed]", "\<\"RU\"\>"}], ",", 
+   RowBox[{"\<\"Education\"\>", "\[RuleDelayed]", "Automatic"}], ",", 
+   RowBox[{"\<\"Age\"\>", "\[RuleDelayed]", "2"}], ",", 
+   RowBox[{"\<\"Address\"\>", "\[RuleDelayed]", "Automatic"}], ",", 
+   RowBox[{"\<\"Self\"\>", "\[RuleDelayed]", "Global`Human`$15"}], ",", 
+   RowBox[{"\<\"Properties\"\>", "\[RuleDelayed]", 
+    RowBox[{"Keys", "[", "Global`Human`$15", "]"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
  TaggingRules->{},
- CellChangeTimes->{3.9090621475425634`*^9},
- CellLabel->"Out[16]=",
- CellID->351634558,ExpressionUUID->"c18a6716-0a1d-4063-9a08-a9975cb3c6d2"]
+ CellChangeTimes->{
+  3.9090621475425634`*^9, 3.917582752388977*^9, {3.9175830625411987`*^9, 
+   3.9175830704771576`*^9}},
+ CellLabel->"Out[47]=",
+ CellID->158554490,ExpressionUUID->"76acbb8b-a63f-fe4c-afae-e38a721b2c95"]
 }, Open  ]],
 
 Cell["And with associations too:", "Text",
@@ -2079,15 +2073,16 @@ Cell[BoxData[
    RowBox[{"Child", ",", " ", "Toys"}], "]"}], " ", "=", " ", 
   RowBox[{"<|", "|>"}]}]], "Input",
  TaggingRules->{},
- CellLabel->"In[17]:=",
+ CellLabel->"In[48]:=",
  CellID->442993186,ExpressionUUID->"3f909a81-c5ab-4a56-aa25-09a0c794ce00"],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", "\[RightAssociation]"}]], "Output",
  TaggingRules->{},
- CellChangeTimes->{3.909062148823804*^9},
- CellLabel->"Out[17]=",
- CellID->80148992,ExpressionUUID->"670a6970-40bd-4ae9-b173-9a2f44507969"]
+ CellChangeTimes->{3.909062148823804*^9, 3.9175827550189857`*^9, 
+  3.917583075083208*^9},
+ CellLabel->"Out[48]=",
+ CellID->15276645,ExpressionUUID->"01e9d904-f41b-7d4d-b426-9779f22dac61"]
 }, Open  ]],
 
 Cell["And set one toy:", "Text",
@@ -2097,94 +2092,38 @@ Cell["And set one toy:", "Text",
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"Kirill", "[", "Child", "]"}]], "Input",
+ RowBox[{"Kirill", "[", 
+  RowBox[{"Child", ",", " ", "\"\<Self\>\""}], "]"}]], "Input",
  TaggingRules->{},
- CellLabel->"In[18]:=",
+ CellChangeTimes->{{3.9175830809693966`*^9, 3.9175830838957405`*^9}},
+ CellLabel->"In[50]:=",
  CellID->27068764,ExpressionUUID->"f3926338-8258-443b-950e-3592b7d3115b"],
 
 Cell[BoxData[
- InterpretationBox[
+ RowBox[{"\[LeftAssociation]", 
   RowBox[{
-   TagBox["Human",
-    "SummaryHead"], "[", 
-   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
-    TemplateBox[{
-      PaneSelectorBox[{False -> GridBox[{{
-            StyleBox["\"\|01f467\"", 28, StripOnInput -> False], 
-            GridBox[{{
-               RowBox[{
-                 TagBox["\"Self: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox["Global`Human`$12", "SummaryItem"]}], 
-               "\[SpanFromLeft]"}, {
-               RowBox[{
-                 TagBox["\"Properties: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox[
-                  RowBox[{"{", 
-                    
-                    RowBox[{
-                    "\"Icon\"", ",", "\"Init\"", ",", "\"Name\"", ",", 
-                    "\"Lang\"", ",", "\"Education\"", ",", "\"Age\"", ",", 
-                    "\"Address\"", ",", "\"Self\"", ",", "\"Properties\"", 
-                    ",", "\"Toys\""}], "}"}], "SummaryItem"]}], 
-               "\[SpanFromLeft]"}}, 
-             GridBoxAlignment -> {
-              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
-             False, GridBoxItemSize -> {
-              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
-              BaseStyle -> {
-              ShowStringCharacters -> False, NumberMarks -> False, 
-               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
-          AutoDelete -> False, 
-          GridBoxItemSize -> {
-           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-          BaselinePosition -> {1, 1}], True -> GridBox[{{
-            StyleBox["\"\|01f467\"", 28, StripOnInput -> False], 
-            GridBox[{{
-               RowBox[{
-                 TagBox["\"Self: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox["Global`Human`$12", "SummaryItem"]}], 
-               "\[SpanFromLeft]"}, {
-               RowBox[{
-                 TagBox["\"Properties: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox[
-                  RowBox[{"{", 
-                    
-                    RowBox[{
-                    "\"Icon\"", ",", "\"Init\"", ",", "\"Name\"", ",", 
-                    "\"Lang\"", ",", "\"Education\"", ",", "\"Age\"", ",", 
-                    "\"Address\"", ",", "\"Self\"", ",", "\"Properties\"", 
-                    ",", "\"Toys\""}], "}"}], "SummaryItem"]}], 
-               "\[SpanFromLeft]"}}, 
-             GridBoxAlignment -> {
-              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
-             False, GridBoxItemSize -> {
-              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
-              BaseStyle -> {
-              ShowStringCharacters -> False, NumberMarks -> False, 
-               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
-          AutoDelete -> False, 
-          GridBoxItemSize -> {
-           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-          BaselinePosition -> {1, 1}]}, 
-       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
-     "SummaryPanel"],
-    DynamicModuleValues:>{}], "]"}],
-  $CellContext`Human[$CellContext`Human`$12],
-  Editable->False,
-  SelectWithContents->True,
-  Selectable->False]], "Output",
+   RowBox[{"\<\"Icon\"\>", "\[RuleDelayed]", 
+    StyleBox["\<\"\|01f467\"\>",
+     StripOnInput->False,
+     FontSize->28]}], ",", 
+   RowBox[{"\<\"Init\"\>", "\[RuleDelayed]", "Identity"}], ",", 
+   RowBox[{"\<\"Name\"\>", "\[Rule]", "\<\"Zlata Belova\"\>"}], ",", 
+   RowBox[{"\<\"Lang\"\>", "\[RuleDelayed]", "\<\"RU\"\>"}], ",", 
+   RowBox[{"\<\"Education\"\>", "\[RuleDelayed]", "Automatic"}], ",", 
+   RowBox[{"\<\"Age\"\>", "\[RuleDelayed]", "2"}], ",", 
+   RowBox[{"\<\"Address\"\>", "\[RuleDelayed]", "Automatic"}], ",", 
+   RowBox[{"\<\"Self\"\>", "\[RuleDelayed]", "Global`Human`$15"}], ",", 
+   RowBox[{"\<\"Properties\"\>", "\[RuleDelayed]", 
+    RowBox[{"Keys", "[", "Global`Human`$15", "]"}]}], ",", 
+   RowBox[{"\<\"Toys\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", "\[RightAssociation]"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
  TaggingRules->{},
- CellChangeTimes->{3.909062150153961*^9},
- CellLabel->"Out[18]=",
- CellID->65964047,ExpressionUUID->"091b5db2-fd62-4513-964a-0ed60db8be3a"]
+ CellChangeTimes->{
+  3.909062150153961*^9, 3.9175827561105785`*^9, {3.917583076293915*^9, 
+   3.9175830842380867`*^9}},
+ CellLabel->"Out[50]=",
+ CellID->251111605,ExpressionUUID->"efdc9634-c765-5643-ac8c-59119e543826"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -2195,14 +2134,15 @@ Cell[BoxData[
    RowBox[{"Child", ",", " ", "Toys", ",", " ", "Dog"}], "]"}], " ", "=", 
   " ", "\"\<Robert\>\""}]], "Input",
  TaggingRules->{},
- CellLabel->"In[19]:=",
+ CellLabel->"In[51]:=",
  CellID->208717374,ExpressionUUID->"41fc7877-1719-4731-9042-b3b1aae048fe"],
 
 Cell[BoxData["\<\"Robert\"\>"], "Output",
  TaggingRules->{},
- CellChangeTimes->{3.9090621521510305`*^9},
- CellLabel->"Out[19]=",
- CellID->617066102,ExpressionUUID->"fa8086b6-da27-4980-8c37-0643d60b15e9"]
+ CellChangeTimes->{3.9090621521510305`*^9, 3.917582766858471*^9, 
+  3.9175830873300514`*^9},
+ CellLabel->"Out[51]=",
+ CellID->10415807,ExpressionUUID->"f516c13f-2ed1-df46-95d5-76abd747d8dc"]
 }, Open  ]],
 
 Cell["And another toy:", "Text",
@@ -2217,14 +2157,15 @@ Cell[BoxData[
    RowBox[{"Child", ",", " ", "Toys", ",", " ", "Cat"}], "]"}], " ", "=", 
   " ", "\"\<Jessica\>\""}]], "Input",
  TaggingRules->{},
- CellLabel->"In[20]:=",
+ CellLabel->"In[52]:=",
  CellID->283210627,ExpressionUUID->"334eb00f-fa32-4b45-aff3-3f1b10e6dfbf"],
 
 Cell[BoxData["\<\"Jessica\"\>"], "Output",
  TaggingRules->{},
- CellChangeTimes->{3.909062153291645*^9},
- CellLabel->"Out[20]=",
- CellID->18073590,ExpressionUUID->"e855e0e5-9586-4d2c-bb21-4b7a760da93f"]
+ CellChangeTimes->{3.909062153291645*^9, 3.9175827687349415`*^9, 
+  3.917583089305479*^9},
+ CellLabel->"Out[52]=",
+ CellID->216368723,ExpressionUUID->"0448f652-d156-e346-8a1f-1e16d0acb50d"]
 }, Open  ]],
 
 Cell["And the result:", "Text",
@@ -2234,94 +2175,40 @@ Cell["And the result:", "Text",
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"Kirill", "@", "Child"}]], "Input",
+ RowBox[{"Kirill", "[", 
+  RowBox[{"Child", ",", " ", "\"\<Self\>\""}], "]"}]], "Input",
  TaggingRules->{},
- CellLabel->"In[21]:=",
+ CellChangeTimes->{{3.91758309170323*^9, 3.9175830956014194`*^9}},
+ CellLabel->"In[53]:=",
  CellID->367261186,ExpressionUUID->"f0bbde99-4e27-4aff-af6e-0b02c4de7470"],
 
 Cell[BoxData[
- InterpretationBox[
+ RowBox[{"\[LeftAssociation]", 
   RowBox[{
-   TagBox["Human",
-    "SummaryHead"], "[", 
-   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
-    TemplateBox[{
-      PaneSelectorBox[{False -> GridBox[{{
-            StyleBox["\"\|01f467\"", 28, StripOnInput -> False], 
-            GridBox[{{
-               RowBox[{
-                 TagBox["\"Self: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox["Global`Human`$12", "SummaryItem"]}], 
-               "\[SpanFromLeft]"}, {
-               RowBox[{
-                 TagBox["\"Properties: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox[
-                  RowBox[{"{", 
-                    
-                    RowBox[{
-                    "\"Icon\"", ",", "\"Init\"", ",", "\"Name\"", ",", 
-                    "\"Lang\"", ",", "\"Education\"", ",", "\"Age\"", ",", 
-                    "\"Address\"", ",", "\"Self\"", ",", "\"Properties\"", 
-                    ",", "\"Toys\""}], "}"}], "SummaryItem"]}], 
-               "\[SpanFromLeft]"}}, 
-             GridBoxAlignment -> {
-              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
-             False, GridBoxItemSize -> {
-              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
-              BaseStyle -> {
-              ShowStringCharacters -> False, NumberMarks -> False, 
-               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
-          AutoDelete -> False, 
-          GridBoxItemSize -> {
-           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-          BaselinePosition -> {1, 1}], True -> GridBox[{{
-            StyleBox["\"\|01f467\"", 28, StripOnInput -> False], 
-            GridBox[{{
-               RowBox[{
-                 TagBox["\"Self: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox["Global`Human`$12", "SummaryItem"]}], 
-               "\[SpanFromLeft]"}, {
-               RowBox[{
-                 TagBox["\"Properties: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox[
-                  RowBox[{"{", 
-                    
-                    RowBox[{
-                    "\"Icon\"", ",", "\"Init\"", ",", "\"Name\"", ",", 
-                    "\"Lang\"", ",", "\"Education\"", ",", "\"Age\"", ",", 
-                    "\"Address\"", ",", "\"Self\"", ",", "\"Properties\"", 
-                    ",", "\"Toys\""}], "}"}], "SummaryItem"]}], 
-               "\[SpanFromLeft]"}}, 
-             GridBoxAlignment -> {
-              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
-             False, GridBoxItemSize -> {
-              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
-              BaseStyle -> {
-              ShowStringCharacters -> False, NumberMarks -> False, 
-               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
-          AutoDelete -> False, 
-          GridBoxItemSize -> {
-           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-          BaselinePosition -> {1, 1}]}, 
-       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
-     "SummaryPanel"],
-    DynamicModuleValues:>{}], "]"}],
-  $CellContext`Human[$CellContext`Human`$12],
-  Editable->False,
-  SelectWithContents->True,
-  Selectable->False]], "Output",
+   RowBox[{"\<\"Icon\"\>", "\[RuleDelayed]", 
+    StyleBox["\<\"\|01f467\"\>",
+     StripOnInput->False,
+     FontSize->28]}], ",", 
+   RowBox[{"\<\"Init\"\>", "\[RuleDelayed]", "Identity"}], ",", 
+   RowBox[{"\<\"Name\"\>", "\[Rule]", "\<\"Zlata Belova\"\>"}], ",", 
+   RowBox[{"\<\"Lang\"\>", "\[RuleDelayed]", "\<\"RU\"\>"}], ",", 
+   RowBox[{"\<\"Education\"\>", "\[RuleDelayed]", "Automatic"}], ",", 
+   RowBox[{"\<\"Age\"\>", "\[RuleDelayed]", "2"}], ",", 
+   RowBox[{"\<\"Address\"\>", "\[RuleDelayed]", "Automatic"}], ",", 
+   RowBox[{"\<\"Self\"\>", "\[RuleDelayed]", "Global`Human`$15"}], ",", 
+   RowBox[{"\<\"Properties\"\>", "\[RuleDelayed]", 
+    RowBox[{"Keys", "[", "Global`Human`$15", "]"}]}], ",", 
+   RowBox[{"\<\"Toys\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"\<\"Dog\"\>", "\[Rule]", "\<\"Robert\"\>"}], ",", 
+      RowBox[{"\<\"Cat\"\>", "\[Rule]", "\<\"Jessica\"\>"}]}], 
+     "\[RightAssociation]"}]}]}], "\[RightAssociation]"}]], "Output",
  TaggingRules->{},
- CellChangeTimes->{3.909062154932281*^9},
- CellLabel->"Out[21]=",
- CellID->95836321,ExpressionUUID->"4a96a643-8b8c-4519-b159-765ddaceaf3a"]
+ CellChangeTimes->{3.909062154932281*^9, 3.917582769779602*^9, 
+  3.917583096287901*^9},
+ CellLabel->"Out[53]=",
+ CellID->71069502,ExpressionUUID->"ce79b916-072d-ea47-a6d2-d5cced11c576"]
 }, Open  ]],
 
 Cell["Define method that will be work only for Human type:", "Text",
@@ -2336,7 +2223,7 @@ Cell[BoxData[
     RowBox[{"StringTemplate", "[", "\"\<Hi! My name is `1`\>\"", "]"}], "[", 
     RowBox[{"human", "[", "\"\<Name\>\"", "]"}], "]"}], "]"}]}]], "Input",
  TaggingRules->{},
- CellLabel->"In[22]:=",
+ CellLabel->"In[54]:=",
  CellID->24567138,ExpressionUUID->"b2942eb3-b9a7-4cb6-a758-0a0fbae4e773"],
 
 Cell["Check this method:", "Text",
@@ -2348,14 +2235,15 @@ Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{"sayHi", "[", "Kirill", "]"}]], "Input",
  TaggingRules->{},
- CellLabel->"In[23]:=",
+ CellLabel->"In[55]:=",
  CellID->232598195,ExpressionUUID->"dc0ebbe2-836b-4d52-be50-1456e6898bb1"],
 
 Cell[BoxData["\<\"Hi! My name is Kirill Belov\"\>"], "Print",
  TaggingRules->{},
- CellChangeTimes->{3.9090621572791867`*^9},
- CellLabel->"During evaluation of In[23]:=",
- CellID->445951619,ExpressionUUID->"b9af157d-0a34-4eb6-978a-5dca2091581b"]
+ CellChangeTimes->{3.9090621572791867`*^9, 3.9175827727503815`*^9, 
+  3.9175831038351974`*^9},
+ CellLabel->"During evaluation of In[55]:=",
+ CellID->72920356,ExpressionUUID->"b038269d-c41d-2e42-a8e4-fa879375dd9f"]
 }, Open  ]],
 
 Cell["Create new type from Human as parent type:", "Text",
@@ -2370,14 +2258,15 @@ Cell[BoxData[
    RowBox[{"{", 
     RowBox[{"\"\<Course\>\"", " ", "->", " ", "1"}], "}"}]}], "]"}]], "Input",
  TaggingRules->{},
- CellLabel->"In[24]:=",
+ CellLabel->"In[56]:=",
  CellID->64017049,ExpressionUUID->"a9b8e125-ae6e-48a1-a0dd-9277dbef85a9"],
 
 Cell[BoxData["Student"], "Output",
  TaggingRules->{},
- CellChangeTimes->{3.9090621584358983`*^9},
- CellLabel->"Out[24]=",
- CellID->1034050,ExpressionUUID->"340fbd67-1619-4373-8261-12f2eb4f0515"]
+ CellChangeTimes->{3.9090621584358983`*^9, 3.917582774016573*^9, 
+  3.9175831052993736`*^9},
+ CellLabel->"Out[56]=",
+ CellID->300968332,ExpressionUUID->"3efb96d8-0d6b-f542-828b-3886aba85187"]
 }, Open  ]],
 
 Cell["Create some student:", "Text",
@@ -2391,7 +2280,7 @@ Cell[BoxData[
   RowBox[{"Student", "[", 
    RowBox[{"\"\<Name\>\"", " ", "->", " ", "\"\<Ivan\>\""}], "]"}]}]], "Input",
  TaggingRules->{},
- CellLabel->"In[25]:=",
+ CellLabel->"In[57]:=",
  CellID->75031516,ExpressionUUID->"df61fd50-d221-4bb5-9bb4-538ccdede3d4"],
 
 Cell[BoxData[
@@ -2407,7 +2296,7 @@ Cell[BoxData[
                RowBox[{
                  TagBox["\"Self: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["Global`Student`$13", "SummaryItem"]}], 
+                 TagBox["Global`Student`$16", "SummaryItem"]}], 
                "\[SpanFromLeft]"}, {
                RowBox[{
                  TagBox["\"Properties: \"", "SummaryItemAnnotation"], 
@@ -2439,7 +2328,7 @@ Cell[BoxData[
                RowBox[{
                  TagBox["\"Self: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["Global`Student`$13", "SummaryItem"]}], 
+                 TagBox["Global`Student`$16", "SummaryItem"]}], 
                "\[SpanFromLeft]"}, {
                RowBox[{
                  TagBox["\"Properties: \"", "SummaryItemAnnotation"], 
@@ -2455,8 +2344,7 @@ Cell[BoxData[
                "\[SpanFromLeft]"}}, 
              GridBoxAlignment -> {
               "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
-             False, 
-             GridBoxItemSize -> {
+             False, GridBoxItemSize -> {
               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
              GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
               BaseStyle -> {
@@ -2470,14 +2358,15 @@ Cell[BoxData[
        Dynamic[Typeset`open$$], ImageSize -> Automatic]},
      "SummaryPanel"],
     DynamicModuleValues:>{}], "]"}],
-  $CellContext`Student[$CellContext`Student`$13],
+  $CellContext`Student[$CellContext`Student`$16],
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
  TaggingRules->{},
- CellChangeTimes->{3.90906215960778*^9},
- CellLabel->"Out[25]=",
- CellID->357513954,ExpressionUUID->"6825ff6d-f5a0-417d-abb8-eaeb59327ce6"]
+ CellChangeTimes->{3.90906215960778*^9, 3.9175827750396957`*^9, 
+  3.9175831062596626`*^9},
+ CellLabel->"Out[57]=",
+ CellID->96611185,ExpressionUUID->"78d1b1ca-f37e-054d-98d5-d38176899241"]
 }, Open  ]],
 
 Cell["Check that method sayHi inhered:", "Text",
@@ -2489,14 +2378,15 @@ Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{"sayHi", "[", "Ivan", "]"}]], "Input",
  TaggingRules->{},
- CellLabel->"In[26]:=",
+ CellLabel->"In[58]:=",
  CellID->74419184,ExpressionUUID->"89f5a6ed-5a3f-461d-bc97-80bdf7ca0650"],
 
 Cell[BoxData["\<\"Hi! My name is Ivan\"\>"], "Print",
  TaggingRules->{},
- CellChangeTimes->{3.909062160780204*^9},
- CellLabel->"During evaluation of In[26]:=",
- CellID->136524731,ExpressionUUID->"1f87f2cc-84ef-4dac-b01a-3a4bb3740e07"]
+ CellChangeTimes->{3.909062160780204*^9, 3.9175827760853367`*^9, 
+  3.9175831071927223`*^9},
+ CellLabel->"During evaluation of In[58]:=",
+ CellID->371642990,ExpressionUUID->"327f6fae-4030-d143-bee8-63bf874da658"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
@@ -4505,8 +4395,8 @@ Cell["Additional information about limitations, issues, etc.", "Text",
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{820, 725},
-WindowMargins->{{Automatic, 515}, {119, Automatic}},
+WindowSize->{829.5, 829.5},
+WindowMargins->{{Automatic, 537.75}, {72, Automatic}},
 DockedCells->{
   Cell[
    BoxData[
@@ -4563,25 +4453,25 @@ Fu6DuJJG2H9mK2QZ3X1Y8rjKVdsLU11Qbnfn/Mae/TiO1RZHs2bny+6Vwq5Sfi8TnHKi+1+K4NOh"]\
   "UpdatedTimestamp" -> 3.8976648930839817`17.343379486501696*^9, 
   "TemplateVersion" -> "2023.03.03", "StatusMessage" -> "", "AutoUpdate" -> 
   True, "PacletBuildData" -> {"FileHashes" -> ByteArray[CompressedData["
-1:eJwByAI3/SFib1JiAQAAALsCAAA4Qzp4nHOU1A1Wd8lPLs1NzStJLMnMz9N3
+1:eJwByQI2/SFib1JiAQAAALwCAAA4Qzp4nHOU1A1Wd8lPLs1NzStJLMnMz9N3
 zUvPySzO0HcvzUxJLdb3T8pKTS4p1stLcmTSDWYLzi8tSk71Karjeit/5xA3
 UCQksSg9tcQn1uWoz/6wz6W6wUrYzfPMS0mt0I830EtOK0YyqpjFLz8vFWEO
-c8aTD1nOXGK6wWr4zClOTQdJFccb4zHrxWPNb/MZX8jqBmsQY5ZeemoeHtPe
-atQJ6D59Yq4bbIXdtKDUtNSi1Lzk1IDEdGDIBVfmJuXnFOs7F6UmlqSGVBak
-ogViqXWJZXvEi2KEFWLtAoEaa72ADjYjyQpIJKEZz30pfdbnj7MVEMYHWNd9
-U53aF64bbE6G8YFo5nssz7iWbWTJhDB/b3lKWNrnHyq6waYkmQ8KG3TTU3eL
-nDfddFwPYfoiQQOPWpvXnLrBWthND05NLErOgMSpKSSlpeKJzz9sXhOLGyfI
-kmIevpQrpqX6MD3bQlc3WJNI84oz8Rh3Z5Wv0fx9l0J1g3WJMS4tMzUnpViv
-PAePkXy6N2ctd6q01A02IcbITBDtm1qSmJJYkojfZKWaYoMlzclBusF6xJgM
-z71GeMycK3B4zdepjpZEmllelFmSqpeTn5yNx8yL1pOeXPBrZ8VZ6gUXpObk
-EFlUZap0v5oz9ZKwbrA2QcOIKq84kue9NtP8YY87yjENJLrQEvXMBWc6SGb2
-TM7P0yvIS0fOcm4tS9beFD0igtCNEIHpDi7NzU0sqnTKr0DXvVKtdq1pgiwn
-QjdCRNA7tSgvNQdemaCkJZ/9/Ox/zc4yRyB0IkR4AxKTc1JLPPPS8tF0pU5V
-UT5y4L0ZQhdCRBCiyzcxLzMttbgEf9qVu5xfq7k8xlc3mDPI1dHF11UvNwXZ
-ogr3g8+LN7NHI3QgRARDgMYDQyW1BMxAK8NiZj3k5dIWtUfohIkAAADzr0Eo
-IlLq
+c8aTD1nOXGK6wWr4zClOTQdJFccb4zHr768FBVdmHhLRDdYgxiy99NQ8PKa9
+1agT0H36xFw32Aq7aUGpaalFqXnJqQGJ6cCQC67MTcrPKdZ3LkpNLEkNqSxI
+RQvEUusSy/aIF8UIK8TaBQI11nrJ6gabkWQFJJLQjOe+lD7r88fZCgjjA6zr
+vqlO7QvXDTYnw/hANPM9lmdcyzayZEKYv7c8JSzt8w8V3WBTkswHhQ266am7
+Rc6bbjquhzB9kaCBR63Na07dYC3spgenJhYlZ0Di1BSS0lLxxKeb9dxG62sn
+RUgxD1/K3dY1y+iJzERgeGsSaV5xJh7jLkx2/PDoC6uGbrAuMcalZabmpBTr
+lefgMZJP9+as5U6VlrrBJsQYmQmifVNLElMSSxLxm3w6r1H1jrZrgW6wHjEm
+w3OvER4zjRd5bn11Wl2LSDPLizJLUvVy8pOz8Zh50XrSkwt+7aw4S73ggtSc
+HCKLqkyV7ldzpl4S1g3WJmgYUeWVrE+90ndxSx7cUY5pINGFlqhnLjjTQTKz
+Z3J+nl5BXjpylnNrWbL2pugREaQsAheB6Q4uzc1NLKp0yq9A171SrXataYIs
+J0I3QkTQO7UoLzUHXpmgpCWfnfcT/lWp+dYidCJEeAMSk3NSSzzz0vLRdC26
+MjtyKuP6KqQCAi4iCNHlm5iXmZZaXII/7W6tvyb3K3Yy0DLOIFdHF19XvdwU
+ZIsq3A8+L97MHo3QgRARDAEaDwyV1BIwA60Mi5n1kJdLW9QeoRMmAgAcyrR6
+o2NQEg==
       "]], "LastBuiltArchive" -> 
-    "C:\\Users\\Kirill\\Projects\\Objects\\build\\KirillBelov__Objects-1.0.26.\
+    "C:\\Users\\Kirill\\Projects\\Objects\\build\\KirillBelov__Objects-1.0.27.\
 paclet"}},
 CreateCellID->True,
 DynamicEvaluationTimeout->60,
