@@ -1402,7 +1402,7 @@ Cell[BoxData[
 Cell[BoxData["Human"], "Output",
  TaggingRules->{},
  CellChangeTimes->{3.909062128026768*^9, 3.91758266706299*^9, 
-  3.9175830245697994`*^9},
+  3.917583024569799*^9},
  CellLabel->"Out[34]=",
  CellID->714632606,ExpressionUUID->"72fbfca8-08b4-0340-b4cf-30be4cacd1cb"]
 }, Open  ]],
@@ -1511,7 +1511,7 @@ Cell[BoxData[
   SelectWithContents->True,
   Selectable->False]], "Output",
  TaggingRules->{},
- CellChangeTimes->{3.909062129714245*^9, 3.9175826995859127`*^9, 
+ CellChangeTimes->{3.909062129714245*^9, 3.917582699585913*^9, 
   3.917583025666073*^9},
  CellLabel->"Out[35]=",
  CellID->246547991,ExpressionUUID->"b8a1c726-7191-d548-b604-292891795c99"]
@@ -1578,7 +1578,7 @@ Cell[BoxData[
   "\[RightAssociation]"}]], "Output",
  TaggingRules->{},
  CellChangeTimes->{3.909062133746359*^9, 3.9175827073168316`*^9, 
-  3.9175830295063744`*^9},
+  3.917583029506375*^9},
  CellLabel->"Out[37]=",
  CellID->143248146,ExpressionUUID->"40a75d21-95a6-d74d-8648-426c75a7b007"]
 }, Open  ]],
@@ -1634,8 +1634,8 @@ Cell[BoxData[
      ",", "\<\"Address\"\>", ",", "\<\"Self\"\>", ",", "\<\"Properties\"\>"}],
      "}"}]}], "}"}]], "Output",
  TaggingRules->{},
- CellChangeTimes->{3.909062135371369*^9, 3.9175827121016426`*^9, 
-  3.9175830329549522`*^9},
+ CellChangeTimes->{3.909062135371369*^9, 3.917582712101643*^9, 
+  3.9175830329549527`*^9},
  CellLabel->"Out[38]=",
  CellID->343576498,ExpressionUUID->"298e4687-87bc-534c-9de4-d36c85360092"]
 }, Open  ]],
@@ -1852,8 +1852,8 @@ Cell[BoxData[
   SelectWithContents->True,
   Selectable->False]], "Output",
  TaggingRules->{},
- CellChangeTimes->{3.909062142275505*^9, 3.9175827226311207`*^9, 
-  3.9175830434314766`*^9},
+ CellChangeTimes->{3.909062142275505*^9, 3.917582722631121*^9, 
+  3.917583043431477*^9},
  CellLabel->"Out[41]=",
  CellID->192064312,ExpressionUUID->"98e9f138-1b37-d64f-9d3b-eb2d02cb2d49"]
 }, Open  ]],
@@ -1993,7 +1993,7 @@ Cell[BoxData[
 
 Cell[BoxData["\<\"Zlata\"\>"], "Output",
  TaggingRules->{},
- CellChangeTimes->{3.909062145073487*^9, 3.9175827408351345`*^9, 
+ CellChangeTimes->{3.909062145073487*^9, 3.917582740835135*^9, 
   3.9175830572978916`*^9},
  CellLabel->"Out[44]=",
  CellID->740211294,ExpressionUUID->"2ad901cd-3ebb-de46-8cd7-9a2641ba13a3"]
@@ -2017,7 +2017,7 @@ Cell[BoxData[
 Cell[BoxData["\<\"Zlata Belova\"\>"], "Output",
  TaggingRules->{},
  CellChangeTimes->{3.9090621463547263`*^9, 3.917582751126627*^9, 
-  3.9175830605859413`*^9},
+  3.917583060585942*^9},
  CellLabel->"Out[45]=",
  CellID->28111621,ExpressionUUID->"68c32b98-f50a-9d41-8291-24385eb74c7b"]
 }, Open  ]],
@@ -2032,7 +2032,7 @@ Cell[BoxData[
  RowBox[{"Kirill", "[", 
   RowBox[{"Child", ",", " ", "\"\<Self\>\""}], "]"}]], "Input",
  TaggingRules->{},
- CellChangeTimes->{{3.9175830669383163`*^9, 3.9175830698883114`*^9}},
+ CellChangeTimes->{{3.9175830669383173`*^9, 3.9175830698883114`*^9}},
  CellLabel->"In[47]:=",
  CellID->227233029,ExpressionUUID->"0e7a47d1-2930-4f8a-973f-6ac627c20e64"],
 
@@ -2055,8 +2055,8 @@ Cell[BoxData[
   "\[RightAssociation]"}]], "Output",
  TaggingRules->{},
  CellChangeTimes->{
-  3.9090621475425634`*^9, 3.917582752388977*^9, {3.9175830625411987`*^9, 
-   3.9175830704771576`*^9}},
+  3.9090621475425634`*^9, 3.917582752388977*^9, {3.917583062541199*^9, 
+   3.917583070477158*^9}},
  CellLabel->"Out[47]=",
  CellID->158554490,ExpressionUUID->"76acbb8b-a63f-fe4c-afae-e38a721b2c95"]
 }, Open  ]],
@@ -2095,7 +2095,7 @@ Cell[BoxData[
  RowBox[{"Kirill", "[", 
   RowBox[{"Child", ",", " ", "\"\<Self\>\""}], "]"}]], "Input",
  TaggingRules->{},
- CellChangeTimes->{{3.9175830809693966`*^9, 3.9175830838957405`*^9}},
+ CellChangeTimes->{{3.917583080969397*^9, 3.91758308389574*^9}},
  CellLabel->"In[50]:=",
  CellID->27068764,ExpressionUUID->"f3926338-8258-443b-950e-3592b7d3115b"],
 
@@ -2120,7 +2120,7 @@ Cell[BoxData[
   "\[RightAssociation]"}]], "Output",
  TaggingRules->{},
  CellChangeTimes->{
-  3.909062150153961*^9, 3.9175827561105785`*^9, {3.917583076293915*^9, 
+  3.909062150153961*^9, 3.917582756110579*^9, {3.917583076293915*^9, 
    3.9175830842380867`*^9}},
  CellLabel->"Out[50]=",
  CellID->251111605,ExpressionUUID->"efdc9634-c765-5643-ac8c-59119e543826"]
@@ -2140,7 +2140,7 @@ Cell[BoxData[
 Cell[BoxData["\<\"Robert\"\>"], "Output",
  TaggingRules->{},
  CellChangeTimes->{3.9090621521510305`*^9, 3.917582766858471*^9, 
-  3.9175830873300514`*^9},
+  3.917583087330052*^9},
  CellLabel->"Out[51]=",
  CellID->10415807,ExpressionUUID->"f516c13f-2ed1-df46-95d5-76abd747d8dc"]
 }, Open  ]],
@@ -2162,7 +2162,7 @@ Cell[BoxData[
 
 Cell[BoxData["\<\"Jessica\"\>"], "Output",
  TaggingRules->{},
- CellChangeTimes->{3.909062153291645*^9, 3.9175827687349415`*^9, 
+ CellChangeTimes->{3.909062153291645*^9, 3.917582768734942*^9, 
   3.917583089305479*^9},
  CellLabel->"Out[52]=",
  CellID->216368723,ExpressionUUID->"0448f652-d156-e346-8a1f-1e16d0acb50d"]
@@ -2178,7 +2178,7 @@ Cell[BoxData[
  RowBox[{"Kirill", "[", 
   RowBox[{"Child", ",", " ", "\"\<Self\>\""}], "]"}]], "Input",
  TaggingRules->{},
- CellChangeTimes->{{3.91758309170323*^9, 3.9175830956014194`*^9}},
+ CellChangeTimes->{{3.91758309170323*^9, 3.91758309560142*^9}},
  CellLabel->"In[53]:=",
  CellID->367261186,ExpressionUUID->"f0bbde99-4e27-4aff-af6e-0b02c4de7470"],
 
@@ -2240,7 +2240,7 @@ Cell[BoxData[
 
 Cell[BoxData["\<\"Hi! My name is Kirill Belov\"\>"], "Print",
  TaggingRules->{},
- CellChangeTimes->{3.9090621572791867`*^9, 3.9175827727503815`*^9, 
+ CellChangeTimes->{3.9090621572791867`*^9, 3.917582772750382*^9, 
   3.9175831038351974`*^9},
  CellLabel->"During evaluation of In[55]:=",
  CellID->72920356,ExpressionUUID->"b038269d-c41d-2e42-a8e4-fa879375dd9f"]
@@ -2383,8 +2383,8 @@ Cell[BoxData[
 
 Cell[BoxData["\<\"Hi! My name is Ivan\"\>"], "Print",
  TaggingRules->{},
- CellChangeTimes->{3.909062160780204*^9, 3.9175827760853367`*^9, 
-  3.9175831071927223`*^9},
+ CellChangeTimes->{3.909062160780204*^9, 3.9175827760853376`*^9, 
+  3.917583107192723*^9},
  CellLabel->"During evaluation of In[58]:=",
  CellID->371642990,ExpressionUUID->"327f6fae-4030-d143-bee8-63bf874da658"]
 }, Open  ]]
@@ -4395,8 +4395,8 @@ Cell["Additional information about limitations, issues, etc.", "Text",
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{829.5, 829.5},
-WindowMargins->{{Automatic, 537.75}, {72, Automatic}},
+WindowSize->{958.5, 1005},
+WindowMargins->{{Automatic, -5.25}, {Automatic, 0}},
 DockedCells->{
   Cell[
    BoxData[
