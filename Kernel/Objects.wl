@@ -51,8 +51,7 @@ Import[FileNameJoin[{DirectoryName[$InputFileName, 2], "Images", "ObjectIcon.png
 
 Options[Object] = {
 	"Icon" :> $objectDefaultIcon, 
-	"Init" -> Identity, 
-	"Format" :> $objectFormat
+	"Init" -> Identity
 }; 
 
 
@@ -219,10 +218,6 @@ Unset[symbol[key]];
 
 
 Object /: MakeBoxes[object: Object[symbol_Symbol?AssociationQ], form: (StandardForm | TraditionalForm)] := 
-object["Format"][object, form]; 
-
-
-$objectFormat[object: _[symbol_], form_] := 
 Module[{above, below}, 
 	above = {
 		{BoxForm`SummaryItem[{"Self: ", Defer["Self"] /. symbol}], SpanFromLeft}, 
