@@ -20,7 +20,7 @@ CreateType::usage =
 
 
 Object::usage = 
-"Object[] base mutable object"; 
+"Object[] base mutable object."; 
 
 
 TypeQ::usage = 
@@ -51,7 +51,8 @@ Import[FileNameJoin[{DirectoryName[$InputFileName, 2], "Images", "ObjectIcon.png
 
 Options[Object] = {
 	"Icon" :> $objectDefaultIcon, 
-	"Init" -> Identity
+	"Init" -> Identity, 
+	"Format" :> $objectFormat
 }; 
 
 
@@ -218,6 +219,10 @@ Unset[symbol[key]];
 
 
 Object /: MakeBoxes[object: Object[symbol_Symbol?AssociationQ], form: (StandardForm | TraditionalForm)] := 
+object["Format"][object, form]; 
+
+
+$objectFormat[object: _[symbol_], form_] := 
 Module[{above, below}, 
 	above = {
 		{BoxForm`SummaryItem[{"Self: ", Defer["Self"] /. symbol}], SpanFromLeft}, 
@@ -226,7 +231,7 @@ Module[{above, below},
 	below = {}; 
 	
 	(*Return*)
-	BoxForm`ArrangeSummaryBox[Object, object, symbol["Icon"], above, below, form, "Interpretable" -> Automatic]
+	BoxForm`ArrangeSummaryBox[Head[object], object, symbol["Icon"], above, below, form, "Interpretable" -> Automatic]
 ];
 
 
