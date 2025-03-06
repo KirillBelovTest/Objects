@@ -164,7 +164,7 @@ Object /: SetDelayed[Object[symbol_Symbol][key_Symbol], value_] :=
 With[{k = SymbolName[key]}, symbol[k] := value]; 
 
 
-Object /: Set[Object[symbol_Symbol][keys: (_String | _Symbol).., key: (_String | _Symbol)], value_] := 
+Object /: Set[Object[symbol_Symbol][keys__, key_], value_] := 
 With[{part = Object[symbol][keys]}, 
 	Which[
 		AssociationQ[part], 
@@ -176,7 +176,7 @@ With[{part = Object[symbol][keys]},
 ]; 
 
 
-Object /: SetDelayed[Object[symbol_Symbol][keys: (_String | _Symbol).., key: (_String | _Symbol)], value_] := 
+Object /: SetDelayed[Object[symbol_Symbol][keys__, key_], value_] := 
 With[{part = Object[symbol][keys]}, 
 	Which[
 		AssociationQ[part], 
@@ -187,17 +187,12 @@ With[{part = Object[symbol][keys]},
 ]; 
 
 
-Object /: Set[Object[symbol_Symbol][keys: (_String | _Symbol).., key: (_String | _Symbol)], value_] := 
+Object /: Set[Object[symbol_Symbol][keys__, key_Symbol], value_] := 
 With[{k = SymbolName[key]}, Object[symbol][keys, k] = value]; 
 
 
-Object /: SetDelayed[Object[symbol_Symbol][keys: (_String | _Symbol).., key: (_String | _Symbol)], value_] := 
+Object /: SetDelayed[Object[symbol_Symbol][keys__, key_Symbol], value_] := 
 With[{k = SymbolName[key]}, Object[symbol][keys, k] := value]; 
-
-
-Object /: AppendTo[Object[symbol_Symbol][key_String], value_] /; 
-ListQ[symbol[key]] || AssociationQ[symbol[key]] := 
-symbol[key] = Append[symbol[key], value]; 
 
 
 Object /: Set[name_Symbol, object_Object] := (
@@ -206,7 +201,6 @@ Object /: Set[name_Symbol, object_Object] := (
 	name /: Set[name[keys__], value_] := object[keys] = value; 
 	name /: SetDelayed[name[keys__], value_] := object[keys] := value; 
 	name /: Unset[name[key_String]] := Unset[object[key]]; 
-	name /: AppendTo[name[key_String], value_] := AppendTo[object[key], value]; 
 	name
 ); 
 
