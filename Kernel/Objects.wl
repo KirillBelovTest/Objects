@@ -51,7 +51,8 @@ Import[FileNameJoin[{DirectoryName[$InputFileName, 2], "Images", "ObjectIcon.png
 
 Options[Object] = {
 	"Icon" :> $objectDefaultIcon, 
-	"Init" -> Identity
+	"Init" -> Identity, 
+	"PublicFields" -> {"Properties"}
 }; 
 
 
@@ -219,10 +220,11 @@ Unset[symbol[key]];
 
 Object /: MakeBoxes[object: Object[symbol_Symbol?AssociationQ], form: (StandardForm | TraditionalForm)] := 
 Module[{above, below}, 
-	above = {
-		{BoxForm`SummaryItem[{"Self: ", Defer["Self"] /. symbol}], SpanFromLeft}, 
-		{BoxForm`SummaryItem[{"Properties: ", symbol["Properties"]}], SpanFromLeft}
-	}; 
+	above = Join[
+		{{BoxForm`SummaryItem[{"Self: ", Defer["Self"] /. symbol}], SpanFromLeft}}, 
+		Map[{BoxForm`SummaryItem[{# <> ": ", symbol[#]}], SpanFromLeft}&] @ symbol["PublicFields"]
+	]; 
+
 	below = {}; 
 	
 	(*Return*)
