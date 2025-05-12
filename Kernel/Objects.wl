@@ -50,38 +50,38 @@ Import[FileNameJoin[{DirectoryName[$InputFileName, 2], "Images", "ObjectIcon.png
 
 
 Options[Object] = {
-	"Icon" :> $objectDefaultIcon, 
-	"Init" -> Identity, 
-	"PublicFields" -> {"Properties"}
+    "Icon" :> $objectDefaultIcon, 
+    "Init" -> Identity, 
+    "PublicFields" -> {"Properties"}
 }; 
 
 
 Object[opts: OptionsPattern[]] := 
 With[{symbol = Unique[Context[Object] <> SymbolName[Object] <> "`$"], 
-	fullOpts = Normal[Join[<|Options[Object]|>, <|Flatten[{opts}]|>]]}, 
-	symbol = <||>; 
-	Table[opt /. {
-		_[k_String, v_] :> SetDelayed[symbol[k], v], 
-		_[k_Symbol, v_] :> With[{ks = SymbolName[k]}, SetDelayed[symbol[ks], v]]
-	}, {opt, fullOpts}]; 
-	symbol["Self"] := symbol; 
-	symbol["Properties"] := Keys[symbol]; 
-	symbol["Init"] @ Object[symbol]; 
-	Return[Object[symbol]]
+    fullOpts = Normal[Join[<|Options[Object]|>, <|Flatten[{opts}]|>]]}, 
+    symbol = <||>; 
+    Table[opt /. {
+        _[k_String, v_] :> SetDelayed[symbol[k], v], 
+        _[k_Symbol, v_] :> With[{ks = SymbolName[k]}, SetDelayed[symbol[ks], v]]
+    }, {opt, fullOpts}]; 
+    symbol["Self"] := symbol; 
+    symbol["Properties"] := Keys[symbol]; 
+    symbol["Init"] @ Object[symbol]; 
+    Return[Object[symbol]]
 ]; 
 
 
 Object[assoc_Association] := 
 If[KeyExistsQ[assoc, "Self"], 
-	Object["Self"] /. assoc, 
+    Object["Self"] /. assoc, 
 (*Else*)
-	With[{symbol = Unique[Context[Object] <> SymbolName[Object] <> "`$"]}, 
-		symbol = assoc; 
-		symbol["Self"] := symbol; 
-		symbol["Properties"] := Keys[symbol]; 
-		If[KeyExistsQ[symbol, "Init"], symbol["Init"] @ Object[symbol]]; 
-		Object[symbol]
-	]
+    With[{symbol = Unique[Context[Object] <> SymbolName[Object] <> "`$"]}, 
+        symbol = assoc; 
+        symbol["Self"] := symbol; 
+        symbol["Properties"] := Keys[symbol]; 
+        If[KeyExistsQ[symbol, "Init"], symbol["Init"] @ Object[symbol]]; 
+        Object[symbol]
+    ]
 ]; 
 
 
@@ -167,24 +167,24 @@ With[{k = SymbolName[key]}, symbol[k] := value];
 
 Object /: Set[Object[symbol_Symbol][keys__, key_], value_] := 
 With[{part = Object[symbol][keys]}, 
-	Which[
-		AssociationQ[part], 
-			Object[symbol][keys] = Append[part, key -> value], 
-		True, 
-			part[key] = value
-	]; 
-	value
+    Which[
+        AssociationQ[part], 
+            Object[symbol][keys] = Append[part, key -> value], 
+        True, 
+            part[key] = value
+    ]; 
+    value
 ]; 
 
 
 Object /: SetDelayed[Object[symbol_Symbol][keys__, key_], value_] := 
 With[{part = Object[symbol][keys]}, 
-	Which[
-		AssociationQ[part], 
-			Object[symbol][keys] = Append[part, key :> value], 
-		True, 
-			part[key] := value
-	]; 
+    Which[
+        AssociationQ[part], 
+            Object[symbol][keys] = Append[part, key :> value], 
+        True, 
+            part[key] := value
+    ]; 
 ]; 
 
 
@@ -197,12 +197,12 @@ With[{k = SymbolName[key]}, Object[symbol][keys, k] := value];
 
 
 Object /: Set[name_Symbol, object_Object] := (
-	ClearAll[name]; 
-	Block[{Object}, SetAttributes[Object, HoldFirst]; name = object]; 
-	name /: Set[name[keys__], value_] := object[keys] = value; 
-	name /: SetDelayed[name[keys__], value_] := object[keys] := value; 
-	name /: Unset[name[key_String]] := Unset[object[key]]; 
-	name
+    ClearAll[name]; 
+    Block[{Object}, SetAttributes[Object, HoldFirst]; name = object]; 
+    name /: Set[name[keys__], value_] := object[keys] = value; 
+    name /: SetDelayed[name[keys__], value_] := object[keys] := value; 
+    name /: Unset[name[key_String]] := Unset[object[key]]; 
+    name
 ); 
 
 
@@ -220,15 +220,15 @@ Unset[symbol[key]];
 
 Object /: MakeBoxes[object: Object[symbol_Symbol?AssociationQ], form: (StandardForm | TraditionalForm)] := 
 Module[{above, below}, 
-	above = Join[
-		{{BoxForm`SummaryItem[{"Self: ", Defer["Self"] /. symbol}], SpanFromLeft}}, 
-		Map[{BoxForm`SummaryItem[{# <> ": ", symbol[#]}], SpanFromLeft}&] @ symbol["PublicFields"]
-	]; 
+    above = Join[
+        {{BoxForm`SummaryItem[{"Self: ", Defer["Self"] /. symbol}], SpanFromLeft}}, 
+        Map[{BoxForm`SummaryItem[{# <> ": ", symbol[#]}], SpanFromLeft}&] @ symbol["PublicFields"]
+    ]; 
 
-	below = {}; 
-	
-	(*Return*)
-	BoxForm`ArrangeSummaryBox[Head[object], object, symbol["Icon"], above, below, form, "Interpretable" -> Automatic]
+    below = {}; 
+    
+    (*Return*)
+    BoxForm`ArrangeSummaryBox[Head[object], object, symbol["Icon"], above, below, form, "Interpretable" -> Automatic]
 ];
 
 
@@ -246,29 +246,35 @@ False;
 
 CreateType[type_Symbol, parent_Symbol?TypeQ, init: _Symbol | _Function, fields_Association] := 
 Module[{
-	messages = Messages[type]
+    messages = Messages[type], 
+    upValues = UpValues[type],
+    subValues = SubValues[type], 
+    downValues = DownValues[type]
 }, 
-	ClearAll[type]; 
-	type /: TypeQ[type] = True; 
-	Language`ExtendedFullDefinition[type] = Language`ExtendedFullDefinition[parent] /. parent -> type; 
-	Messages[type] = Normal[<|Messages[type], messages|>]; 
-	Options[type] = Normal[<|Join[Options[type], Normal[fields], {If[init === Automatic, Nothing, "Init" -> init]}]|>]; 
-	type
+    ClearAll[type]; 
+    type /: TypeQ[type] = True; 
+    Language`ExtendedFullDefinition[type] = Language`ExtendedFullDefinition[parent] /. parent -> type; 
+    Messages[type] = Normal[<|Messages[type], messages|>];
+    UpValues[type] = Normal[<|UpValues[type], upValues|>];
+    SubValues[type] = Normal[<|SubValues[type], subValues|>];
+    DownValues[type] = Normal[<|DownValues[type], downValues|>];
+    Options[type] = Normal[<|Join[Options[type], Normal[fields], {If[init === Automatic, Nothing, "Init" -> init]}]|>]; 
+    type
 ]; 
 
 
 CreateType[type_Symbol, parent: _Symbol?TypeQ: Object, init: _Symbol | _Function: Automatic, fields_List: {}] := 
 Module[{assoc = Association[Map[
-	Switch[#, 
-		_String -> _, #, 
-		_String, # -> Automatic, 
-		_Symbol -> _, SymbolName[#[[1]]] -> #[[2]], 
-		_Symbol, SymbolName[#] -> Automatic, 
-		_Symbol :> _, # /. r_[k_, v] :> r[SymbolName[k], v], 
-		_String :> _, #
-	]&
+    Switch[#, 
+        _String -> _, #, 
+        _String, # -> Automatic, 
+        _Symbol -> _, SymbolName[#[[1]]] -> #[[2]], 
+        _Symbol, SymbolName[#] -> Automatic, 
+        _Symbol :> _, # /. r_[k_, v] :> r[SymbolName[k], v], 
+        _String :> _, #
+    ]&
 ] @ fields]}, 
-	CreateType[type, parent, init, assoc]
+    CreateType[type, parent, init, assoc]
 ]; 
 
 
